@@ -1,17 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-    @import url(Style/all.min.css);
-    @import url(Style/font.css);
-    @import url(Style/index.css);
-    @import url(Style/media.css);
+        @import url(Style/all.min.css);
+        @import url(Style/font.css);
+        @import url(/Style/index.css);
+        @import url(Style/media.css);
+        @import url(/Style/slider.css);
     </style>
 </head>
+
 <body>
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <div class="row justify-content align-items">
+                <div class="logo">
+                    <img src="https://caramelly.in/cdn/shop/files/caramelly-logo-new_200x.png?v=1649194947" alt="">
+                </div>
+                <nav>
+                    <ul class="row ">
+                        <li>
+                            <home href="/index.html" style="font-weight: 700;font-size: 15px;">home</a>
+                        </li>
+                        <li><a href="/Page/product.html" style="font-weight: 700;font-size: 15px;">product</a></li>
+                        <li><a href="/Page/cart.html" style="font-weight: 700;font-size: 15px;">cart</a></li>
+                        <li>
+                            <a href="#" style="font-weight: 700 ;font-size: 15px;">Category
+                            </a>
+                            <div class="megamenu">
+                                <div class="row">
+                                    <div class="w-50">
+                                        <div class="w-100">
+                                            <div class="nav-img">
+                                                <img src="https://caramelly.in/cdn/shop/files/essenza-mini-nespresso-caramelly-web-menu-banner_600x600.jpg?v=1680637576"
+                                                    alt="">
+                                            </div>
+                                            <div class="inner-login text-apple f-18">
+                                                <img src="https://cdn.shopify.com/s/files/1/0480/5378/0638/files/login-logout.png?v=1680177799"
+                                                    alt="">
+                                                <a href="/Page/login.html">Login</a>
+                                                <span>•</span>
+                                                <a href="/Page/singup.html">Sign Up</a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_inner_menu text-apple f-18">
+                                            <ul class="shop_menu">
+                                                <li class="slide-nav__item">
+                                                    <a class="slide-nav__link" href="">
+
+                                                        Subscribe & Save
+                                                        <span class="menu_split_label"> NEW</span>
+
+                                                    </a>
+                                                </li>
+                                                <li class="slide-nav__item">
+                                                    <a class="slide-nav__link" href="">
+
+                                                        Caracycle - Pods Recycling
+                                                    </a>
+                                                </li>
+                                                <li class="slide-nav__item">
+                                                    <a class="slide-nav__link" href="">
+
+                                                        Frequently Asked
+                                                    </a>
+                                                </li>
+                                                <li class="slide-nav__item">
+                                                    <a class="slide-nav__link" href="">
+
+                                                        Blog
+                                                    </a>
+                                                </li>
+                                                <li class="slide-nav__item">
+                                                    <a class="slide-nav__link" href="">
+
+                                                        Order Tracking
+                                                    </a>
+                                                </li>
+                                                <li class="slide-nav__item">
+                                                    <a class="slide-nav__link" href="">
+
+                                                        Contact Us
+                                                    </a>
+                                                </li>
+                                                <li class="slide-nav__item">
+                                                    <a class="slide-nav__link" href="">
+
+                                                        Machine Repair/Servicing
+                                                    </a>
+                                                </li>
+                                                <li class="slide-nav__item">
+                                                    <a class="slide-nav__link" href="">
+
+                                                        Register Warranty
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="w-50">
+                                        <div class="w-100">
+                                            <ul class="shop_menu text-apple f-18">
+                                                <li class="slide-nav__item" data-handle="nespresso-coffee-capsules">
+                                                    <a class="shop_block" href="/collections/nespresso-coffee-capsules"
+                                                        data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/14_2fc6b640-e942-46be-aa21-b57f93071f61_60x60.jpg?v=1680294732">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Nespresso Coffee Capsules</p>
+
+
+                                                            <p class="shop_block_sub">Discover 60+ Coffee Blends</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="nespresso-machines">
+                                                    <a class="shop_block" href="/collections/nespresso-machines"
+                                                        data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/Untitled_design_9_60x60.png?v=1680635773">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Nespresso Machines</p>
+
+
+                                                            <p class="shop_block_sub">The new standard in coffee
+                                                                brewing.</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="bean-to-cup-coffee-machines">
+                                                    <a class="shop_block" href="" data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/Untitled_design_16_60x60.jpg?v=1680297062">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Bean to Cup Machines &amp;
+                                                                Grinders</p>
+
+
+                                                            <p class="shop_block_sub">Jura | Sage &amp; Breville |
+                                                                Melitta | Gaggia</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="coffee-syrups">
+                                                    <a class="shop_block" href="" data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/Untitled_design_29_60x60.png?v=1686715101">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> French Coffee Syrups<span
+                                                                    class="menu_split_label">NEW</span></p>
+
+
+                                                            <p class="shop_block_sub">Make Coffee Memorable.</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="milk-frothers">
+                                                    <a class="shop_block" href="" data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/Untitled_design_6_60x60.jpg?v=1680292131">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Milk Frothers</p>
+
+
+                                                            <p class="shop_block_sub">A single whisk fulfils all your
+                                                                wishes.</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="oat-almond-coconut-milk">
+                                                    <a class="shop_block" href="" data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/Untitled_design_18_60x60.png?v=1685122920">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Oat &amp; Almond Milk<span
+                                                                    class="menu_split_label">NEW</span></p>
+
+
+                                                            <p class="shop_block_sub">Made for coffee — created with
+                                                                baristas.</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="nescafe-dolce-gusto">
+                                                    <a class="shop_block" href="" data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/Untitled_design_26_60x60.png?v=1686077614">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Nescafe Dolce Gusto Pods<span
+                                                                    class="menu_split_label">NEW</span></p>
+
+
+                                                            <p class="shop_block_sub">All your coffeehouse favorites are
+                                                                here.</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="coffee">
+                                                    <a class="shop_block" href="" data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/16_3916b985-86ec-4c08-a5a7-531e5a94f086_60x60.jpg?v=1680294855">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Instant, Beans &amp; Ground
+                                                                Coffee</p>
+
+
+                                                            <p class="shop_block_sub">Discover gourmet coffee.</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="coffee-accessories">
+                                                    <a class="shop_block" href="" data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/Untitled_design_8_60x60.jpg?v=1680293534">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Accessories</p>
+
+
+                                                            <p class="shop_block_sub">Pod holders, cups, mugs &amp;
+                                                                more.</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="manual-brewers">
+                                                    <a class="shop_block" href="" data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/5_ca5716bb-68b8-4d59-8737-92b90c423d01_60x60.jpg?v=1680292529">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Moka Pot &amp; French Press
+                                                            </p>
+
+
+                                                            <p class="shop_block_sub">The true soul of Italian coffee.
+                                                            </p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="slide-nav__item" data-handle="lavazza-blue-coffee-capsules">
+                                                    <a class="shop_block" href="" data-bss-pl="active">
+
+                                                        <div class="shop_block_image"><img
+                                                                src="//caramelly.in/cdn/shop/files/Untitled_design_7_60x60.jpg?v=1680292922">
+                                                        </div>
+
+                                                        <div class="shop_block_text">
+
+                                                            <p class="shop_block_heading"> Lavazza Blue machines &amp;
+                                                                pods</p>
+
+
+                                                            <p class="shop_block_sub">The perfect solution for your
+                                                                business.</p>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="btn">
+                    <a href="/Page/login.html" id="login">login</a>
+                    <a href="/Page/singup.html" id="signup">sign-up</a>
+                    <div id="profile"></div>
+                </div>
+            </div>
+            <aside id="user-profile">
+                <a href=""><i class="fa-solid fa-xmark" id="close"></i></a>
+                <div class="profile" id="profilee">
+                </div>
+                <a href="/Page/singup.html" id="logout">logout</a>
+            </aside>
+        </div>
+    </header>
+
+
+    <!-- banner section -->
+    <section class="banner">
+
+
+        <div id="fadeSlider" class="sliderWrapper">
+            <div class="slider">
+                <div class="slide"><img
+                        src="https://caramelly.in/cdn/shop/files/Website_-_Desktop_Banner_1800_x_800_px_5_1400x.jpg?v=1681748043">
+                </div>
+                <div class="slide"><img
+                        src="https://caramelly.in/cdn/shop/files/fully-automatic-coffee-machines-caramelly-web-banne_1400x.jpg?v=1681759071">
+                </div>
+                <div class="slide"><img
+                        src="https://caramelly.in/cdn/shop/files/expat-roasters-caramelly-web_1400x.jpg?v=1689017362">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Revolution section -->
+
+    <section class="revolution">
+        <div class="container">
+            <div class="row">
+                <div class="w-50">
+                    <div class="sub-heading">
+                        <p>Capsule coffee, but better</p>
+                    </div>
+                    <div class="heading">
+                        <h1>A REVOLUTION IN HOME BREWING</h1>
+                    </div>
+                    <div class="content">
+                        <p>ep dive into the features and technology that makes the Morning Machine the best capsule
+                            machine in the world.</p>
+                    </div>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div class="w-50">
+                    <div class="box-img">
+                        <img src="https://caramelly.in/cdn/shop/files/morning-machine-nespresso_600x.gif?v=1642757009"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- coffee flavour section-->
     <section class="coffee-1">
         <h2 class="abril">What's on your mind?</h2>
@@ -55,8 +451,8 @@
                 </div>
             </div>
         </div>
-    </section> 
-    
+    </section>
+
     <!-- download   -->
     <section class="download">
         <div class="container">
@@ -64,7 +460,7 @@
                 <a href=""><img src="image/appstore.png" alt=""></a>
                 <a href=""><img src="image/playstore.png" alt=""></a>
             </div>
-        </div> 
+        </div>
     </section>
 
     <!-- spotlight section  -->
@@ -79,7 +475,7 @@
             </ul>
             <div class="row">
                 <div id="nct">
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-xl-4">
                             <div class="spot-img">
                                 <img src="image/spot-1.jpg" alt="">
@@ -87,9 +483,13 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Acrylic Qube</h3>
-                                    <a href=""><h3 class="roboto">₹1,999<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹1,999<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">Light up your capsules from every corner with this cube-shaped Nespresso capsules storage dispenser.</p>
+                                <p class="spotp roboto">Light up your capsules from every corner with this cube-shaped
+                                    Nespresso capsules storage dispenser.</p>
                             </div>
                         </div>
                         <div class="col-xl-4">
@@ -99,9 +499,13 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Coffee Mug</h3>
-                                    <a href=""><h3 class="roboto">₹1,499<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹1,499<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">One design featuring an oasis while the other has a desert - adding an eye-catching touch to your morning coffee.</p>
+                                <p class="spotp roboto">One design featuring an oasis while the other has a desert -
+                                    adding an eye-catching touch to your morning coffee.</p>
                             </div>
                         </div>
                         <div class="col-xl-4">
@@ -111,15 +515,19 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Nespresso Aeroccino4</h3>
-                                    <a href=""><h3 class="roboto">₹15,990<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹15,990<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">Your daily cappuccino is just waiting for you. Cafe like coffee now at your home.</p>
+                                <p class="spotp roboto">Your daily cappuccino is just waiting for you. Cafe like coffee
+                                    now at your home.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="btc">
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-xl-4">
                             <div class="spot-img">
                                 <img src="image/spot-4.jpg" alt="">
@@ -127,9 +535,13 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Melitta Avanza</h3>
-                                    <a href=""><h3 class="roboto">₹79,900<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹79,900<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">Impressive design and equally Impressive features. Now serve delicious coffee to your surprise visitors.</p>
+                                <p class="spotp roboto">Impressive design and equally Impressive features. Now serve
+                                    delicious coffee to your surprise visitors.</p>
                             </div>
                         </div>
                         <div class="col-xl-4">
@@ -139,9 +551,13 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Gaggia Color Vibe</h3>
-                                    <a href=""><h3 class="roboto">₹49,990<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹49,990<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">Intended for the "home barista" who wants to make his coffee corner even more personal and exclusive.</p>
+                                <p class="spotp roboto">Intended for the "home barista" who wants to make his coffee
+                                    corner even more personal and exclusive.</p>
                             </div>
                         </div>
                         <div class="col-xl-4">
@@ -151,15 +567,19 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Saga Touch</h3>
-                                    <a href=""><h3 class="roboto">₹1,84,990<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹1,84,990<i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">Barista quality with a clear touchscreen display, pre-programmed coffee menu and automatic milk consistency.</p>
+                                <p class="spotp roboto">Barista quality with a clear touchscreen display, pre-programmed
+                                    coffee menu and automatic milk consistency.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="nsp">
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-xl-4">
                             <div class="spot-img">
                                 <img src="image/spot-7.jpg" alt="">
@@ -167,9 +587,13 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Pixie Titan</h3>
-                                    <a href=""><h3 class="roboto">₹19,999<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹19,999<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">19-bar high-pressure pump and a fast heat-up system. A machine crafted for those with strong standards in coffee.</p>
+                                <p class="spotp roboto">19-bar high-pressure pump and a fast heat-up system. A machine
+                                    crafted for those with strong standards in coffee.</p>
                             </div>
                         </div>
                         <div class="col-xl-4">
@@ -179,9 +603,13 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Vertuo Pop</h3>
-                                    <a href=""><h3 class="roboto">₹25,999<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹25,999<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">From Espresso to Alto, simply choose your Vertuo capsule, pop it in, and it's ready at the touch of a button.</p>
+                                <p class="spotp roboto">From Espresso to Alto, simply choose your Vertuo capsule, pop it
+                                    in, and it's ready at the touch of a button.</p>
                             </div>
                         </div>
                         <div class="col-xl-4">
@@ -191,15 +619,19 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Atelier</h3>
-                                    <a href=""><h3 class="roboto">₹59,990<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹59,990<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto"> Your personal workbench, with technology that allows you to froth any type of milk, from cow to almond to soy.</p>
+                                <p class="spotp roboto"> Your personal workbench, with technology that allows you to
+                                    froth any type of milk, from cow to almond to soy.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="cfe">
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-xl-4">
                             <div class="spot-img">
                                 <img src="image/spot-10.jpg" alt="">
@@ -207,9 +639,13 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Lavazza Coffee Beans</h3>
-                                    <a href=""><h3 class="roboto">₹499<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹499<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">Handpicked from the plantations of Coorg &amp; Chikmagalur with an exotic aroma of chocolate &amp; spices.</p>
+                                <p class="spotp roboto">Handpicked from the plantations of Coorg &amp; Chikmagalur with
+                                    an exotic aroma of chocolate &amp; spices.</p>
                             </div>
                         </div>
                         <div class="col-xl-4">
@@ -219,9 +655,13 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">illy Ground Coffee</h3>
-                                    <a href=""><h3 class="roboto">₹1,499<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹1,499<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">Gives the coffee engaging notes of cocoa and dried fruits with a full-bodied aftertaste. 100% Arabica.</p>
+                                <p class="spotp roboto">Gives the coffee engaging notes of cocoa and dried fruits with a
+                                    full-bodied aftertaste. 100% Arabica.</p>
                             </div>
                         </div>
                         <div class="col-xl-4">
@@ -231,9 +671,13 @@
                             <div class="spot-content">
                                 <div class="row justify-content">
                                     <h3 class="roboto">Littles Instance Coffee</h3>
-                                    <a href=""><h3 class="roboto">₹799<i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                                    <a href="">
+                                        <h3 class="roboto">₹799<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </h3>
+                                    </a>
                                 </div>
-                                <p class="spotp roboto">100% Premium freeze-dried smooth and rich Arabica coffees. No added Sugar and Vegan friendly.</p>
+                                <p class="spotp roboto">100% Premium freeze-dried smooth and rich Arabica coffees. No
+                                    added Sugar and Vegan friendly.</p>
                             </div>
                         </div>
                     </div>
@@ -294,17 +738,20 @@
             <div class="row text-center">
                 <div class="col-xl-4">
                     <img src="image/hc-1.jpg" alt="">
-                    <p class="roboto">Now create third wave speciality coffee at home from bean to espresso in less than a minute.</p>
+                    <p class="roboto">Now create third wave speciality coffee at home from bean to espresso in less than
+                        a minute.</p>
                     <a href=""><button>Shop Now</button></a>
                 </div>
                 <div class="col-xl-4">
                     <img src="image/hc-2.jpg" alt="">
-                    <p class="roboto">Experience coffee capsules like never before with world's best specialty coffee pod machines.</p>
+                    <p class="roboto">Experience coffee capsules like never before with world's best specialty coffee
+                        pod machines.</p>
                     <a href=""><button>Shop Now</button></a>
                 </div>
                 <div class="col-xl-4">
                     <img src="image/hc-3.jpg" alt="">
-                    <p class="roboto">Enjoy the best coffee, which you previously only knew from Italian coffee bars, even at home.</p>
+                    <p class="roboto">Enjoy the best coffee, which you previously only knew from Italian coffee bars,
+                        even at home.</p>
                     <a href=""><button>Shop Now</button></a>
                 </div>
             </div>
@@ -319,7 +766,8 @@
                     <div class="w-40">
                         <div class="fca text-center align-items justify-content-center">
                             <h3 class="roboto">Our Top 5 Favorite Coffee Recipes</h3>
-                            <p class="roboto">Coffee needs to be perfect every morning. The more the flavors, the better your day...</p>
+                            <p class="roboto">Coffee needs to be perfect every morning. The more the flavors, the better
+                                your day...</p>
                         </div>
                         <div class="fcb">
                             <a href="" class=" roboto">READ MORE</a>
@@ -348,7 +796,8 @@
                         <img src="image/fc-3.jpeg" alt="">
                         <div class="fcaa">
                             <h3 class="roboto">Hold That Button Down: A Guide to Consistent Capsule Brewing</h3>
-                            <p class="roboto">Capsule brewing machines have made espresso infinitely more accessible to the home user. Other traditional...</p>
+                            <p class="roboto">Capsule brewing machines have made espresso infinitely more accessible to
+                                the home user. Other traditional...</p>
                         </div>
                         <div class="fcb">
                             <a href="" class="roboto">READ MORE</a>
@@ -360,7 +809,8 @@
                         <img src="image/fc-4.jpeg" alt="">
                         <div class="fcaa">
                             <h3 class="roboto">A Brief History of the Coffee Capsule</h3>
-                            <p class="roboto">To say that single-serve coffee has come a long way from those tiny packets of...</p>
+                            <p class="roboto">To say that single-serve coffee has come a long way from those tiny
+                                packets of...</p>
                         </div>
                         <div class="fcb">
                             <a href="" class="roboto">READ MORE</a>
@@ -372,4 +822,6 @@
     </section>
 </body>
 <script src="Javascript/vishal.js"></script>
+<script src="/Javascript/slider.js"></script>
+
 </html>
