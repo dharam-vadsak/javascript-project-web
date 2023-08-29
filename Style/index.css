@@ -285,3 +285,31 @@ img{
   .fcaa p{
     padding: 20px 0px;
   }
+
+  /* counter  */
+  .counter{
+    background-color:#21253B;
+    padding: 20px 0;
+  }
+  .counter .count{
+    border-radius: 20px;
+  }
+  .count-i{
+    background-color: #c19e0b;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 40px;
+  }
+  .count h1{
+    font-size: 50px;
+    padding: 20px 0px;
+    font-weight: 900;
+    color: var(--white);
+  }
+  .count h3{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.668);
+  }
+  .count-d{
+    padding-left: 20px;
+  }
