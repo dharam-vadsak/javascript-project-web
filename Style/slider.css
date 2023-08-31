@@ -9,7 +9,7 @@
 }
 
 .sliderWrapper .slider {
-    background: #aaa;
+    /* background: #aaa; */
     overflow: hidden;
     height: 100%;
     position: relative;
