@@ -67,9 +67,17 @@ a {
   padding: 10px 0px;
   /* background-color: aliceblue; */
 }
+.my{
+ margin: 50px 0px;
+}
+.mb{
+  margin-bottom: 40px;
+}
 .py{
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 100px 0px;
+}
+.pb{
+  padding-bottom: 100px;
 }
 .w-50 {
   width: 50%;
@@ -1910,6 +1918,7 @@ text-transform: capitalize;
 .instagram-text {
   text-align: center;
   font-size: 18px;
+  padding: 20px 0px;
 }
 
 .instagram-text a {
@@ -1950,7 +1959,25 @@ text-transform: capitalize;
   transform: scale(1.1); /* Pop-up effect on hover */
   opacity: 1; /* Maintain full opacity on hovered image */
 }
+.insta-img{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  overflow: hidden;
+  transform: scale(1);
+}
+.insta-img:hover img{
+  transform: scale(1.2);
+  filter: grayscale(0.5);
+  cursor: pointer;
+}
+.insta-img img{
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(1);
 
+
+}
 /* Exclusive Brands */
 .Brands-section {
   text-align: center;
@@ -1961,7 +1988,8 @@ text-transform: capitalize;
   font-size: 48px;
   font-weight: bold;
   color: #444444;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  padding-bottom: 20px;
 }
 
 .Brandslogos-container {
@@ -2087,7 +2115,7 @@ footer .container {
 
 footer .container .sec h2 {
   position: relative;
-  color: #000000;
+  color: #21253B;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -2104,11 +2132,16 @@ footer .container .sec h2::before {
 }
 
 footer .container .sec p {
-  color: #fff;
+  color: white;
+  line-height: 25px;
+  font-size: 20px;
+  /* padding:10px; */
+  padding-left: 0px;
+  padding-right: 30px;
 }
 
 .sci {
-  margin-top: 20px;
+  margin-top: 45px;
   display: grid;
   grid-template-columns: repeat(4, 50px);
   grid-gap: 10px;
@@ -2117,20 +2150,28 @@ footer .container .sec p {
 .sci li {
   list-style: none;
 }
-
+.sci li a i{
+  font-size: 20px;
+  color: #21253B;
+}
 .sci li a {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background: #156ae9;
+  background: rgba(255, 255, 255, 0.639);
+  backdrop-filter: blur(10px);
   display: grid;
   align-content: center;
   justify-content: center;
   border-radius: 50px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
 }
 
 .sci li a:hover {
-  background: #6380fe;
+ background-color: white;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.591);
+ transform: scale(1.1);
 }
 
 .sci li a .fa {
@@ -2144,12 +2185,13 @@ footer .container .sec p {
 
 .quicklinks li {
   list-style: none;
+  font-size: 20px;
 }
 
 .quicklinks li a {
   color: #f7f7f7;
   text-decoration: none;
-  margin-bottom: 10px;
+  padding: 9px 0px;
   display: inline-block;
 }
 
@@ -2174,6 +2216,8 @@ footer .container .sec p {
 
 .info li span {
   color: #fff;
+  font-size: 20px;
+  padding: 10px 0px;
 }
 
 .info a {
@@ -2192,3 +2236,15 @@ footer .container .sec p {
   text-align: center;
   color: #fff;
 }
+footer .call ,.email,.address{
+  position: relative;
+}
+footer .call i{
+  position: absolute;
+  top: 15px;
+}
+.email i{
+  position: relative;
+  top: -6px;
+}
+
