@@ -53,3 +53,44 @@ document.getElementById("close").addEventListener("click",(e)=>{
     document.getElementById("user-profile").style.display="none"
 })
 
+
+// const chengimg=()=>{
+//     let images=[
+//         `url("../image/c-1.png")`,
+//         `url("../image/c-2.png")`,
+//         `url("../image/c-3.png")`,
+//         `url("../image/c-4.png")`,
+//         `url("../image/c-5.png")`,
+//     ]
+//     let img=document.querySelector(".loader-img")
+//     let bg=images[Math.floor(Math.random*images.length)]
+//     // console.log(bg);
+//     console.log(img.style.backgroundimage=bg);
+// }
+// let images=[
+//             `url("../image/c-1.png")`,
+//             `url("../image/c-2.png")`,
+//             `url("../image/c-3.png")`,
+//             `url("../image/c-4.png")`,
+//             `url("../image/c-5.png")`,
+//         ]
+let img =document.getElementById("image-loader")
+
+// console.log(img);
+
+let  imgs=["../image/c-1.png","../image/c-2.png","../image/c-3.png","../image/c-4.png"]
+let set=setInterval(function(){
+  let images=Math.floor(Math.random()*imgs.length)
+//   console.log(images);
+  img.src=imgs[images]
+},600)
+
+let loaderone=document.querySelector(".loader-one")
+console.log(loaderone);
+
+window.addEventListener("load",()=>{
+    clearInterval(set)
+    img.style.display="none"
+    
+})
+// setInterval(chengimg,1000)
