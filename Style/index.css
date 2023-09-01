@@ -68,18 +68,21 @@ a {
   /* background-color: aliceblue; */
 }
 
-.my{
- margin: 50px 0px;
+.my {
+  margin: 50px 0px;
 }
-.mb{
+
+.mb {
   margin-bottom: 40px;
 }
-.py{
+
+.py {
   padding: 100px 0px;
 }
-.pb{
+
+.pb {
   padding-bottom: 100px;
-=======
+}
 
 .py {
   padding-top: 80px;
@@ -623,7 +626,9 @@ nav ul li:hover .megamenu {
 
 
 /* banner slider */
-
+.banner {
+  transition: all 0.5s ease;
+}
 
 .sliderWrapper {
 
@@ -1484,36 +1489,41 @@ nav ul li:hover .megamenu {
   width: 100%;
   height: auto;
 
-  }
-  #productappend .col-xl-3{
-      border: 1px solid black;
-  }
-  .productdiv{
-      width: 500px;
-      border:4px solid red;
-      margin: 10px;
-      padding: 10px;
-  
-  }
-  .div1,.div2,.div3 h2{
-      text-align: center;
-      font-size: 20px;
-  }
-  .div4 button{
-      padding: 10px 10px;
-      display: block;
-      margin: auto;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      border: 2px solid black;    
-      transform: scale(1);
-      transition: all 0.6s ease;
-      font-size: 15px;
-      text-transform: uppercase;
-  }
-  .addtocart:hover{
-=======
 }
+
+#productappend .col-xl-3 {
+  border: 1px solid black;
+}
+
+.productdiv {
+  width: 500px;
+  border: 4px solid red;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.div1,
+.div2,
+.div3 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.div4 button {
+  padding: 10px 10px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  transform: scale(1);
+  transition: all 0.6s ease;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+
 
 #productappend .col-xl-3 {
   border: 1px solid black;
@@ -1630,7 +1640,7 @@ nav ul li:hover .megamenu {
   /* font-weight: 900; */
 }
 
-.content{
+
 
 
 .content {
@@ -1650,50 +1660,59 @@ nav ul li:hover .megamenu {
   margin: 10px;
 }
 
-.div1 .img{
-      width: 200px;
-      margin-bottom: 40px;
-      transform: translate(-0%,-0%);
-      pointer-events: none;
-  }
-  .div3{
-      margin-top: 10px;
-  }
-  .border{
-      border: 1px solid black;
-      margin: 10px;
-  }
-  .subimg img{
-      width: 50px;
-      padding: 0px;
-      border-radius: 5px;
-      border: 1px solid rgb(0, 0, 0);
-  }
-  .imgone{
-      /* border: 1px solid black; */
-      padding: 5px;
-      width:100px;
-      margin: 10px;
-  }
-  .imgtwo{
-      /* border: 1px solid black; */
-      padding: 5px;
-      width:100px;
-      margin: 10px;
-  }
-  .producti{
-      width: 200px;
-  }
-  .img-pro img{
-      width: 100px;
-      height: 100px;
-  }
-  #hover:hover{
-      cursor: pointer;
-  }
-  .subimg img:hover{
-      cursor: pointer;
-  }
+.div1 .img {
+  width: 200px;
+  margin-bottom: 40px;
+  transform: translate(-0%, -0%);
+  pointer-events: none;
+}
+
+.div3 {
+  margin-top: 10px;
+}
+
+.border {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.subimg img {
+  width: 50px;
+  padding: 0px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.imgone {
+  /* border: 1px solid black; */
+  padding: 5px;
+  width: 100px;
+  margin: 10px;
+}
+
+.imgtwo {
+  /* border: 1px solid black; */
+  padding: 5px;
+  width: 100px;
+  margin: 10px;
+}
+
+.producti {
+  width: 200px;
+}
+
+.img-pro img {
+  width: 100px;
+  height: 100px;
+}
+
+#hover:hover {
+  cursor: pointer;
+}
+
+.subimg img:hover {
+  cursor: pointer;
+}
 
 
 .div1 .img {
@@ -1945,9 +1964,10 @@ nav ul li:hover .megamenu {
 }
 
 
-.subimg-show img{
+.subimg-show img {
   width: 80px;
   height: 80px;
+}
 
 .subimg-show img {
   width: 90px;
@@ -1978,9 +1998,6 @@ nav ul li:hover .megamenu {
   font-size: 30px;
 }
 
-.addtocart{
-  padding: 8px 0px;
-
 
 .addtocart {
   padding: 5px 0px;
@@ -1998,15 +2015,16 @@ nav ul li:hover .megamenu {
   text-transform: uppercase;
 }
 
-.addtocart:hover{
-      transform: scale(1.1);
-      color: white;
-      background-color: #dc793e;
-      box-shadow: 0px 0px 15px black;
-      border: none;
-      cursor: pointer;      
-  }
-  /* .description{
+.addtocart:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: #dc793e;
+  box-shadow: 0px 0px 15px black;
+  border: none;
+  cursor: pointer;
+}
+
+/* .description{
     text-indent: 100px;
     padding: 10px;
     margin-top: 50px;
@@ -2015,30 +2033,33 @@ nav ul li:hover .megamenu {
     height: 100px;
     overflow: hidden;
   } */
-  .readmor{
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid blue;
-    margin: 0px 20px;
-    margin-top: 20px;
-    text-transform: uppercase;
-  }
-  .readmor:hover{
-    cursor: pointer;
-  }
-  .readclose{
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid blue;
-    text-transform: uppercase;
-    display: none;
-    margin: 10px 20px;
-    margin-top: 10px;
-    /* transition: all 0.4s ease; */
-  }
-  .readclose:hover{
-    cursor: pointer;
-  }
+.readmor {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid blue;
+  margin: 0px 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.readmor:hover {
+  cursor: pointer;
+}
+
+.readclose {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid blue;
+  text-transform: uppercase;
+  display: none;
+  margin: 10px 20px;
+  margin-top: 10px;
+  /* transition: all 0.4s ease; */
+}
+
+.readclose:hover {
+  cursor: pointer;
+}
 
 
 .addtocart:hover {
@@ -2293,25 +2314,29 @@ nav ul li:hover .megamenu {
   opacity: 1;
   /* Maintain full opacity on hovered image */
 }
-.insta-img{
+
+.insta-img {
   width: 300px;
   height: 300px;
   padding: 20px;
   overflow: hidden;
   transform: scale(1);
 }
-.insta-img:hover img{
+
+.insta-img:hover img {
   transform: scale(1.2);
   filter: grayscale(0.5);
   cursor: pointer;
 }
-.insta-img img{
+
+.insta-img img {
   width: 100%;
   transition: all 0.4s ease-in-out;
   filter: grayscale(1);
 
 
 }
+
 /* Exclusive Brands */
 .Brands-section {
   text-align: center;
@@ -2484,10 +2509,12 @@ footer .container .sec p {
 .sci li {
   list-style: none;
 }
-.sci li a i{
+
+.sci li a i {
   font-size: 20px;
   color: #21253B;
 }
+
 .sci li a {
   display: inline-block;
   width: 48px;
@@ -2503,9 +2530,9 @@ footer .container .sec p {
 }
 
 .sci li a:hover {
- background-color: white;
- box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.591);
- transform: scale(1.1);
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.591);
+  transform: scale(1.1);
 }
 
 .sci li a .fa {
@@ -2571,14 +2598,19 @@ footer .container .sec p {
   color: #fff;
 
 }
-footer .call ,.email,.address{
+
+footer .call,
+.email,
+.address {
   position: relative;
 }
-footer .call i{
+
+footer .call i {
   position: absolute;
   top: 15px;
 }
-.email i{
+
+.email i {
   position: relative;
   top: -6px;
 }
@@ -2598,7 +2630,7 @@ footer .call i{
   margin: auto;
   z-index: 999999999999999999999999999;
 } */
-#image-loader{
+#image-loader {
   position: absolute;
   z-index: 9999;
   top: 0;
@@ -2608,77 +2640,87 @@ footer .call i{
   margin: auto;
   width: 100px;
 }
-.loader-one{
+
+.loader-one {
   width: 200px;
-  height: 200px; 
+  height: 200px;
   border-color: #000;
   border-top: 10px solid;
   background-color: transparent;
   border-radius: 100%;
   animation: loader 1s linear infinite;
 }
+
 @keyframes loader {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+
+  100% {
     transform: rotate(360deg);
   }
-  
+
 }
 
 
 
 
-.div{
+.div {
   width: 900px;
   display: flex;
   flex-wrap: nowrap;
   border: 1px solid black;
 }
-.imgdiv{
+
+.imgdiv {
   width: 500px;
   height: 100%;
   border: 2px solid red;
 }
-#mainimg{
+
+#mainimg {
   width: 300px;
-  height:300px;
+  height: 300px;
   display: block;
   margin: auto;
 }
-.sub{
+
+.sub {
   justify-content: center;
- cursor: pointer;
+  cursor: pointer;
   margin: 20px 0px;
 }
 
 
-.sub img{
+.sub img {
   width: 80px;
   border: 1px solid black;
   margin: 10px;
 }
-.title-show{
+
+.title-show {
   padding: 20px 40px;
   margin: 20px 0px;
   text-align: center;
 }
-.contetdiv{
+
+.contetdiv {
   width: 400px;
 }
-.description{
-    text-indent: 100px;
-    padding: 10px;
-    margin-top: 30px;
-    line-height: 20px;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    text-align: justify;
-    overflow: hidden;
+
+.description {
+  text-indent: 100px;
+  padding: 10px;
+  margin-top: 30px;
+  line-height: 20px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  text-align: justify;
+  overflow: hidden;
 }
-.readmore{
+
+.readmore {
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -2686,19 +2728,20 @@ footer .call i{
   text-transform: uppercase;
   margin: 20px;
 }
-.closemore{
+
+.closemore {
   cursor: pointer;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
   border-bottom: 2px solid blue;
-  display:none;
+  display: none;
   margin: 20px;
   font-weight: 900;
 }
-.fa-angle-up,.fa-chevron-down{
+
+.fa-angle-up,
+.fa-chevron-down {
   font-size: 15px;
   margin-left: 5px;
 }
-
-
