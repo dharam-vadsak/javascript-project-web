@@ -67,7 +67,10 @@ a {
   padding: 10px 0px;
   /* background-color: aliceblue; */
 }
-
+.py{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .w-50 {
   width: 50%;
   padding: 10px 0px;
@@ -1890,4 +1893,302 @@ text-transform: capitalize;
     color: red;
     font-size: 15px;
     font-weight: 900;
+}
+
+/* Say Hello On Instagram!*/
+#instagram-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.instagram-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #444444;
+}
+
+.instagram-text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.instagram-text a {
+  color: #6667AB;
+  text-decoration: none;
+}
+
+.instagram-text a:hover {
+  text-decoration: underline;
+}
+
+.Instagramimage-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Instagramcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Instagramcolumn img {
+  max-width: 100%;
+  max-height: 260px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  transition: transform 0.2s; /* Only add transition for transform */
+}
+
+.Instagramimage-container:hover .Instagramcolumn img:not(:hover) {
+  opacity: 0.5; /* Reduce opacity for non-hovered images within the container */
+}
+
+.Instagramcolumn img:hover {
+  transform: scale(1.1); /* Pop-up effect on hover */
+  opacity: 1; /* Maintain full opacity on hovered image */
+}
+
+/* Exclusive Brands */
+.Brands-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.Brandssection-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.Brandslogos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.Brandslogo {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.Brandslogo:hover {
+  opacity: 0.8;
+}
+
+.Brandscentered-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.Brandsnew-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.logo7,
+.logo8 {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logo7:hover,
+.logo8:hover {
+  opacity: 0.8;
+}
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../image/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animatewave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animatewave_2 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: .2;
+  bottom: 15px;
+  animation: animatewave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animatewave_2 3s linear infinite;
+}
+
+@keyframes animatewave {
+  0% {
+      background-position-x: 1000px;
+  }
+
+  100% {
+      background-position-x: 0px;
+  }
+}
+
+@keyframes animatewave_2 {
+  0% {
+      background-position-x: 0px;
+  }
+
+  100% {
+      background-position-x: 1000px;
+  }
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+footer .container .sec h2 {
+  position: relative;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer .container .sec h2::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #ffeb3b;
+  ;
+}
+
+footer .container .sec p {
+  color: #fff;
+}
+
+.sci {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-gap: 10px;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: #156ae9;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.sci li a:hover {
+  background: #6380fe;
+}
+
+.sci li a .fa {
+  color: #fff;
+  font-size: 20px;
+}
+
+.quicklinks {
+  position: relative;
+}
+
+.quicklinks li {
+  list-style: none;
+}
+
+.quicklinks li a {
+  color: #f7f7f7;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.quicklinks li a:hover {
+  color: #ffeb3b;
+}
+
+.info {
+  position: relative;
+}
+
+.info li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 16px;
+}
+
+.info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+}
+
+.info li span {
+  color: #fff;
+}
+
+.info a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.info a:hover {
+  color: #ffeb3b;
+}
+
+.copyrightText {
+  width: 100%;
+  background: #1f3389;
+  padding: 8px 100px;
+  text-align: center;
+  color: #fff;
 }
