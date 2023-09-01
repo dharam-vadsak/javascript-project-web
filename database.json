@@ -1,5 +1,66 @@
 {
-  "signup":[],
-  "cart":[],
-  "product":[]
+  "signup": [
+    {
+      "img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBERERERERESGBESEREREREYGBESERESGBgZGRgYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHzQrJCw0NjQ2NDQ0NDQ0NDQ4MTQ2NDE0NDQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQYCBQcEAwj/xABBEAACAQIDBQYDBAcHBQEAAAABAgADEQQhMQUSQVFhBhMicYGRBzKhQmJysRQjUoKSwdFDorLC4fDxJDM0U3QW/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAEDAgT/xAAgEQEBAQEAAgICAwAAAAAAAAAAAQIRITEDQRJhIlHR/9oADAMBAAIRAxEAPwDp8REjoiIgIiICIiAkSYgREh2ABJNgBcnhKl2o7XLhTuU13qpt4P2b6X6nl7ydWRbGYDUgSEcNoQfLOcM2ltnF1iWerUIP2FLLT9bZH0mp/TKinwmx5gm/5x05H6LicH2f2i2jTI7vE1LX+UsHX+FriXLZXxEceHF0lLD7SeEn0Jt9RHU46PEquF7d4J/napTztdkZlHmyXA9bSx4TFU6yB6Tq6HRlIIjpx94iJQiIgJEmRASJMQqIiIGMRED6xEQhERAREQEREBETCvVSmrO7BUUXZiQABzJgabtPtYYWkW+2bimPvWJ3j0Fvcicbx+LaoalQkljdFJ1uSLt5kEj1lt7adoaWKJp0AW3UZWc5KylgfCNdVGfXrKklAui7o8Y3SQcrsuX1A95xb5dyeOR8rqqsKhNxYG3E2zA6DSfBKVM6uVJzAGdh166T2YvZ7uWCKxI4WN/+Z8U2LiXYAUnvpoRE1P7Lm/0wam9IbwZSOpufa887VmqZMx1uTr9TPRi8JUoutOopAXUcPOYVKK2DpvBD8xsQF",
+      "first": "jeel",
+      "last": "narola",
+      "email": "jeelnarola@gmail.com",
+      "password": "Narola1234567",
+      "id": 1
+    },
+    {
+      "img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBERERERERESGBESEREREREYGBESERESGBgZGRgYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHzQrJCw0NjQ2NDQ0NDQ0NDQ4MTQ2NDE0NDQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQYCBQcEAwj/xABBEAACAQIDBQYDBAcHBQEAAAABAgADEQQhMQUSQVFhBhMicYGRBzKhQmJysRQjUoKSwdFDorLC4fDxJDM0U3QW/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAEDAgT/xAAgEQEBAQEAAgICAwAAAAAAAAAAAQIRITEDQRJhIlHR/9oADAMBAAIRAxEAPwDp8REjoiIgIiICIiAkSYgREh2ABJNgBcnhKl2o7XLhTuU13qpt4P2b6X6nl7ydWRbGYDUgSEcNoQfLOcM2ltnF1iWerUIP2FLLT9bZH0mp/TKinwmx5gm/5x05H6LicH2f2i2jTI7vE1LX+UsHX+FriXLZXxEceHF0lLD7SeEn0Jt9RHU46PEquF7d4J/napTztdkZlHmyXA9bSx4TFU6yB6Tq6HRlIIjpx94iJQiIgJEmRASJMQqIiIGMRED6xEQhERAREQEREBETCvVSmrO7BUUXZiQABzJgabtPtYYWkW+2bimPvWJ3j0Fvcicbx+LaoalQkljdFJ1uSLt5kEj1lt7adoaWKJp0AW3UZWc5KylgfCNdVGfXrKklAui7o8Y3SQcrsuX1A95xb5dyeOR8rqqsKhNxYG3E2zA6DSfBKVM6uVJzAGdh166T2YvZ7uWCKxI4WN/+Z8U2LiXYAUnvpoRE1P7Lm/0wam9IbwZSOpufa887VmqZMx1uTr9TPRi8JUoutOopAXUcPOYVKK2DpvBD8xsQF",
+      "first": "jeel",
+      "last": "narola",
+      "email": "jeel@gmail.com",
+      "password": "Jeelnarola1234",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "title": "test",
+      "price": "11",
+      "quantity": "1",
+      "Offer": "",
+      "hsn": "12345",
+      "img": "https://cdn.pixabay.com/photo/2020/05/11/15/38/tom-5158824_1280.png",
+      "imgone": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXwBFRcXHhoeOyEhO3xTRlN8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fP/AABEIAIIAVgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAwIEBQEGB//EADQQAAICAQMDAAcGBgMAAAAAAAECAAMRBBIhMUFRBRMiIzJhcUJSgZGhsQYUwdHh8CRTYv/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EAB8RAQEAAgMAAgMAAAAAAAAAAAABAhESITFBcQMiMv/aAAwDAQACEQMRAD8AvFCfzjqaQQRjkx/qs9pIcDgf4nVcnH3aSagDicaviWCMn5yLI2BwYuzaYXptQKVDeZ5fVY3cdJ6z06mal3cDMwa6NO5sOoYoMeyfM2U3GwuqyZyTcYMjIOlyEJ0DJmFyE6RjvOzA+psNo4GT2i6w6rgg48GNR8ceYwkKmOpMptKYzWyQxHQAfhJYZ8YyJ0Ad5187e8waQt09LsrOiu68jIziddFsRq7FDowwVYZBivWerboSJMWMcE8Z7Q6o608v6a/hda0fUejtxxy1J54/8/2nlcT6iTvGOSD3nj/4k9EJpWOq0+djN7xewJ7iLcRxy+K87DMCIRFBCdYgngYhMz6jbhbABxJVOMeYi9i1ikjGe35xunoYqC/siV+Er/XR2AekkyjGcTuFQZHMU1xJwoinmJLr3PSQaxUHPScttUZZjnHEp36haazbqGCL9kGUgZSrB1bbSV+EdSwwBMvU+mtCwei50tDcEKOJQ1l1utJNzMlSnhRxmZ+opWy9DWuNpGfnN9J3HXqpq6a69Q61NurzlT8ogrLusrC3eRiVyknZ2pMui",
+      "imgtwo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXwBFRcXHhoeOyEhO3xTRlN8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fP/AABEIAIIAVgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAwIEBQEGB//EADQQAAICAQMDAAcGBgMAAAAAAAECAAMRBBIhMUFRBRMiIzJhcUJSgZGhsQYUwdHh8CRTYv/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EAB8RAQEAAgMAAgMAAAAAAAAAAAABAhESITFBcQMiMv/aAAwDAQACEQMRAD8AvFCfzjqaQQRjkx/qs9pIcDgf4nVcnH3aSagDicaviWCMn5yLI2BwYuzaYXptQKVDeZ5fVY3cdJ6z06mal3cDMwa6NO5sOoYoMeyfM2U3GwuqyZyTcYMjIOlyEJ0DJmFyE6RjvOzA+psNo4GT2i6w6rgg48GNR8ceYwkKmOpMptKYzWyQxHQAfhJYZ8YyJ0Ad5187e8waQt09LsrOiu68jIziddFsRq7FDowwVYZBivWerboSJMWMcE8Z7Q6o608v6a/hda0fUejtxxy1J54/8/2nlcT6iTvGOSD3nj/4k9EJpWOq0+djN7xewJ7iLcRxy+K87DMCIRFBCdYgngYhMz6jbhbABxJVOMeYi9i1ikjGe35xunoYqC/siV+Er/XR2AekkyjGcTuFQZHMU1xJwoinmJLr3PSQaxUHPScttUZZjnHEp36haazbqGCL9kGUgZSrB1bbSV+EdSwwBMvU+mtCwei50tDcEKOJQ1l1utJNzMlSnhRxmZ+opWy9DWuNpGfnN9J3HXqpq6a69Q61NurzlT8ogrLusrC3eRiVyknZ2pMui",
+      "imgthree": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXwBFRcXHhoeOyEhO3xTRlN8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fP/AABEIAIIAVgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAwIEBQEGB//EADQQAAICAQMDAAcGBgMAAAAAAAECAAMRBBIhMUFRBRMiIzJhcUJSgZGhsQYUwdHh8CRTYv/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EAB8RAQEAAgMAAgMAAAAAAAAAAAABAhESITFBcQMiMv/aAAwDAQACEQMRAD8AvFCfzjqaQQRjkx/qs9pIcDgf4nVcnH3aSagDicaviWCMn5yLI2BwYuzaYXptQKVDeZ5fVY3cdJ6z06mal3cDMwa6NO5sOoYoMeyfM2U3GwuqyZyTcYMjIOlyEJ0DJmFyE6RjvOzA+psNo4GT2i6w6rgg48GNR8ceYwkKmOpMptKYzWyQxHQAfhJYZ8YyJ0Ad5187e8waQt09LsrOiu68jIziddFsRq7FDowwVYZBivWerboSJMWMcE8Z7Q6o608v6a/hda0fUejtxxy1J54/8/2nlcT6iTvGOSD3nj/4k9EJpWOq0+djN7xewJ7iLcRxy+K87DMCIRFBCdYgngYhMz6jbhbABxJVOMeYi9i1ikjGe35xunoYqC/siV+Er/XR2AekkyjGcTuFQZHMU1xJwoinmJLr3PSQaxUHPScttUZZjnHEp36haazbqGCL9kGUgZSrB1bbSV+EdSwwBMvU+mtCwei50tDcEKOJQ1l1utJNzMlSnhRxmZ+opWy9DWuNpGfnN9J3HXqpq6a69Q61NurzlT8ogrLusrC3eRiVyknZ2pMui",
+      "cat": "test",
+      "id": 1,
+      "qyt": 7
+    }
+  ],
+  "product": [
+    {
+      "title": "Starbucks Espresso Roast Coffee Beans (340g)",
+      "price": "1199",
+      "quantity": "10",
+      "Offer": "",
+      "hsn": "12345",
+      "img": "https://caramelly.in/cdn/shop/products/starbucks-espresso-roast-coffee-beans-340g-634508_800x.webp?v=1692093177",
+      "imgone": "https://caramelly.in/cdn/shop/products/starbucks-pike-place-coffee-beans-340g-669753_400x.webp?v=1692093177",
+      "imgtwo": "https://caramelly.in/cdn/shop/products/starbucks-blonde-espresso-roast-coffee-beans-340g-949194_400x.webp?v=1692093177",
+      "imgthree": "https://caramelly.in/cdn/shop/products/lavazza-rg-gusto-crema-coffee-beans-500g-172767_400x.jpg?v=1653558702",
+      "cat": "beans",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.",
+      "id": 1
+    },
+    {
+      "title": "jeel",
+      "price": "1222",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis, sapiente ut aspernatur iure modi veniam ducimus aliquam dolor necessitatibus velit molestias, error sequi, cumque ipsa cum culpa omnis corporis.",
+      "quantity": "1",
+      "Offer": "",
+      "hsn": "123456",
+      "img": "https://www.shutterstock.com/image-vector/tom-jerry-vector-design-260nw-1146743228.jpg",
+      "imgone": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXwBFRcXHhoeOyEhO3xTRlN8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fP/AABEIAIIAVgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAwIEBQEGB//EADQQAAICAQMDAAcGBgMAAAAAAAECAAMRBBIhMUFRBRMiIzJhcUJSgZGhsQYUwdHh8CRTYv/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EAB8RAQEAAgMAAgMAAAAAAAAAAAABAhESITFBcQMiMv/aAAwDAQACEQMRAD8AvFCfzjqaQQRjkx/qs9pIcDgf4nVcnH3aSagDicaviWCMn5yLI2BwYuzaYXptQKVDeZ5fVY3cdJ6z06mal3cDMwa6NO5sOoYoMeyfM2U3GwuqyZyTcYMjIOlyEJ0DJmFyE6RjvOzA+psNo4GT2i6w6rgg48GNR8ceYwkKmOpMptKYzWyQxHQAfhJYZ8YyJ0Ad5187e8waQt09LsrOiu68jIziddFsRq7FDowwVYZBivWerboSJMWMcE8Z7Q6o608v6a/hda0fUejtxxy1J54/8/2nlcT6iTvGOSD3nj/4k9EJpWOq0+djN7xewJ7iLcRxy+K87DMCIRFBCdYgngYhMz6jbhbABxJVOMeYi9i1ikjGe35xunoYqC/siV+Er/XR2AekkyjGcTuFQZHMU1xJwoinmJLr3PSQaxUHPScttUZZjnHEp36haazbqGCL9kGUgZSrB1bbSV+EdSwwBMvU+mtCwei50tDcEKOJQ1l1utJNzMlSnhRxmZ+opWy9DWuNpGfnN9J3HXqpq6a69Q61NurzlT8ogrLusrC3eRiVyknZ2pMui",
+      "imgtwo": "https://caramelly.in/cdn/shop/products/nespresso-essenza-mini-coffee-machine-930278_800x.jpg?v=1691241081",
+      "imgthree": "https://caramelly.in/cdn/shop/products/lavazza-rg-gusto-crema-coffee-beans-500g-172767_400x.jpg?v=1653558702",
+      "cat": "jeel",
+      "id": 2
+    }
+  ]
 }
