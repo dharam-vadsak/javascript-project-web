@@ -550,6 +550,7 @@ nav ul li:hover .megamenu {
 
 .inner-login img {
   margin-right: 16px;
+  width: auto;
 }
 
 .inner-login span {
