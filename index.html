@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         @import url(Style/all.min.css);
         @import url(Style/font.css);
@@ -17,7 +18,12 @@
 </head>
 
 <body>
-    <!-- header section -->
+
+    <div class="img-box-1">
+        <img src="" alt="" id="image-loader">
+    </div>`
+    
+    <!-- <div class="loader-one"></div> -->
     <header>
         <div class="container">
             <div class="row justify-content align-items">
@@ -110,8 +116,13 @@
                                     <div class="w-50">
                                         <div class="w-100">
                                             <ul class="shop_menu text-apple f-18">
+
                                                 <li class="slide-nav__item">
                                                     <a class="shop_block" href="">
+
+                                                <li class="slide-nav__item" data-handle="nespresso-coffee-capsules">
+                                                    <a class="shop_block" href="#"
+                                                        data-bss-pl="active">
 
                                                         <div class="shop_block_image"><img
                                                                 src="//caramelly.in/cdn/shop/files/14_2fc6b640-e942-46be-aa21-b57f93071f61_60x60.jpg?v=1680294732">
@@ -387,9 +398,9 @@
 
     <section class="revolution">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="w-50">
-                    <div class="sub-heading">
+                    <div class="sub-heading" >
                         <p>Capsule coffee, but better</p>
                     </div>
                     <div class="heading">
@@ -412,10 +423,10 @@
     </section>
 
     <!-- coffee flavour section-->
-    <section class="coffee-1">
-        <h2 class="abril">What's on your mind?</h2>
+    <section class="coffee-1" >
+        <h2 class="abril" data-aos="zoom-in" data-aos-duration="1000">What's on your mind?</h2>
         <div class="container">
-            <div class="row align-items justify-content-center">
+            <div class="row align-items justify-content-center" data-aos="zoom-out" data-aos-duration="1000">
                 <div class="text-center coffee-t">
                     <img src="image/c-1.png" alt="">
                     <p class="roboto">Nespresso Capsule</p>
@@ -460,24 +471,24 @@
     <section class="download">
         <div class="container">
             <div class="row justify-content-center align-items">
-                <a href=""><img src="image/appstore.png" alt="" id="appstore"></a>
-                <a href=""><img src="image/playstore.png" alt=""></a>
+                <a href=""><img src="image/appstore.png" alt="" id="appstore" data-aos="slide-right" data-aos-duration="4000" data-aos-offset="100"></a>
+                <a href=""><img src="image/playstore.png" alt="" data-aos="slide-left" data-aos-duration="4000" data-aos-offset="100"></a>
             </div>
         </div>
     </section>
 
     <!-- spotlight section  -->
-    <section class="spotlight">
+    <section class="spotlight" >
         <div class="container">
-            <h2 class="abril">Spotlight</h2>
-            <ul class="row  roboto justify-content-center text-center">
+            <h2 class="abril"  data-aos="zoom-in-down" data-aos-duration="1000">Spotlight</h2>
+            <ul class="row  roboto justify-content-center text-center" data-aos="zoom-in" data-aos-duration="1000">
                 <li><a href="" id="nc">Necessities</a></li>
                 <li><a href="" id="bt">Bean-to-Cup</a></li>
                 <li><a href="" id="ns">Nespresso</a></li>
                 <li><a href="" id="cf">Coffee</a></li>
             </ul>
             <div class="row">
-                <div id="nct">
+                <div id="nct" data-aos="fade-up" data-aos-duration="1000">
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
                             <div class="spot-img">
@@ -690,43 +701,43 @@
     </section>
 
     <!-- coffee flavour section-->
-    <section class="coffee">
-        <h2 class="abril">Discover 100+ Nespresso Coffee Flavours</h2>
+    <section class="coffee" >
+        <h2 class="abril" data-aos="zoom-in-down" data-aos-duration="1000">Discover 100+ Nespresso Coffee Flavours</h2>
         <div class="container">
             <div class="row align-items justify-content-center">
-                <div class="text-center coffee-t">
+                <div class="text-center coffee-t" data-aos="fade-up-left">
                     <img src="image/coffee-1.png" alt="">
                     <p class="roboto">Limited Edition</p>
                 </div>
-                <div class="text-center coffee-t">
+                <div class="text-center coffee-t" data-aos="fade-up-left">
                     <img src="image/coffee-2.png" alt="">
                     <p class="roboto">Capsule Bundles</p>
                 </div>
-                <div class="text-center coffee-t">
-                    <img src="image/coffee-3.png" alt="">
+                <div class="text-center coffee-t" data-aos="fade-up-left">
+                    <img src="image/coffee-3.png" alt="" >
                     <p class="roboto">Ispirazional Italina</p>
                 </div>
-                <div class="text-center coffee-t">
+                <div class="text-center coffee-t" data-aos="fade-up-left">
                     <img src="image/coffee-4.png" alt="">
                     <p class="roboto">Barista Creation</p>
                 </div>
-                <div class="text-center coffee-t">
+                <div class="text-center coffee-t" data-aos="fade-up-left">
                     <img src="image/coffee-5.png" alt="">
                     <p class="roboto">World Explorations</p>
                 </div>
-                <div class="text-center coffee-t">
+                <div class="text-center coffee-t" data-aos="fade-up-left">
                     <img src="image/coffee-6.png" alt="">
                     <p class="roboto">Starbucks</p>
                 </div>
-                <div class="text-center coffee-t">
+                <div class="text-center coffee-t" data-aos="fade-up-left">
                     <img src="image/coffee-7.png" alt="">
                     <p class="roboto">Decaffeinated</p>
                 </div>
-                <div class="text-center coffee-t">
+                <div class="text-center coffee-t" data-aos="fade-up-left">
                     <img src="image/coffee-8.png" alt="">
                     <p class="roboto">Master Origin</p>
                 </div>
-                <div class="text-center coffee-t">
+                <div class="text-center coffee-t" data-aos="fade-up-left">
                     <img src="image/coffee-9.png" alt="">
                     <p class="roboto">VertuoLine</p>
                 </div>
@@ -739,19 +750,19 @@
         <h2 class="abril">Curate Your Home Coffee Bar With Us!</h2>
         <div class="container">
             <div class="row text-center">
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 ">
-                    <img src="image/hc-1.jpg" alt="">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 " data-aos="fade-up-right" data-aos-duration="1000">
+                    <img src="image/hc-1.jpg" alt="" >
                     <p class="roboto">Now create third wave speciality coffee at home from bean to espresso in less than
                         a minute.</p>
                     <a href=""><button>Shop Now</button></a>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 ">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 "  data-aos="slide-up" data-aos-duration="1200">
                     <img src="image/hc-2.jpg" alt="">
                     <p class="roboto">Experience coffee capsules like never before with world's best specialty coffee
                         pod machines.</p>
                     <a href=""><button>Shop Now</button></a>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 ">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 "  data-aos="fade-up-left" data-aos-duration="1000">
                     <img src="image/hc-3.jpg" alt="">
                     <p class="roboto">Enjoy the best coffee, which you previously only knew from Italian coffee bars,
                         even at home.</p>
@@ -762,9 +773,9 @@
     </section>
 
     <!-- favorite coffee  -->
-    <section class="fc">
+    <section class="fc" >
         <div class="container">
-            <div class="col-xl-12">
+            <div class="col-xl-12" data-aos="zoom-out" data-aos-duration="1000">
                 <div class="row fc-1">
                     <div class="w-40">
                         <div class="fca text-center align-items justify-content-center">
@@ -782,7 +793,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12" data-aos="zoom-out" data-aos-duration="1000">
                     <div class="fc-2 text-center">
                         <img src="image/fc-2.jpeg" alt="">
                         <div class="fcaa">
@@ -794,7 +805,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12" data-aos="zoom-out" data-aos-duration="1000">
                     <div class="fc-2 text-center">
                         <img src="image/fc-3.jpeg" alt="">
                         <div class="fcaa">
@@ -807,7 +818,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12" data-aos="zoom-out" data-aos-duration="1000">
                     <div class="fc-2 text-center">
                         <img src="image/fc-4.jpeg" alt="">
                         <div class="fcaa">
@@ -828,13 +839,13 @@
     <section class="counter">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3">
+                <div class="col-xl-3 ">
                     <div class="row align-items justify-content-center">
                         <div class="count-i">
                             <i class="fa-solid fa-users"></i>
                         </div>
                         <div class="count count-d">
-                            <h1 class="roboto">15</h1>
+                            <h1 class="roboto" id="spe">15</h1>
                             <h3 class="roboto">SPECIALIST</h3>
                         </div>
                     </div>
@@ -845,7 +856,7 @@
                             <i class="fa-solid fa-handshake"></i>
                         </div>
                         <div class="count count-d">
-                            <h1 class="roboto">1525</h1>
+                            <h1 class="roboto" id="happy">125</h1>
                             <h3 class="roboto">HAPPY CLIENT</h3>
                         </div>
                     </div>
@@ -877,6 +888,7 @@
         </div>
     </section>
 
+
     <!-- Say Hello On Instagram! -->
     <section id="instagram-section" class="py">
         <h2 class="instagram-title">Say Hello On Instagram!</h2>
@@ -899,14 +911,65 @@
             <div class="Instagramcolumn">
                 <img src="image/last2cont_7.jpg" alt="Image 7">
                 <img src="image/last2cont_8.jpg" alt="Image 8">
+
+       <!-- Say Hello On Instagram! -->
+       <section id="instagram-section" >
+        <h2 class="instagram-title abril my">Say Hello On Instagram!</h2>
+        <p class="instagram-text roboto">Tag us in your story to get featured on ours.<br>Follow us <a href="https://www.instagram.com/caramelly.in/" target="_blank">@caramelly.in</a></p>
+
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="insta-img">
+                            <img src="image/last2cont_1.jpg" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="insta-img">
+                            <img src="image/last2cont_2.jpg" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="insta-img">
+                            <img src="image/last2cont_3.jpg" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="insta-img">
+                            <img src="image/last2cont_4.jpg" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="insta-img">
+                            <img src="image/last2cont_5.jpg" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="insta-img">
+                            <img src="image/last2cont_6.jpg" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="insta-img">
+                            <img src="image/last2cont_7.jpg" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="insta-img">
+                            <img src="image/last2cont_8.jpg" alt="Image 1">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Exclusive Brands -->
-    <section class="py">
-        <div class="Brands-section ">
-            <h2 class="Brandssection-title">Exclusive Brands</h2>
+    <section class="pb">
+        <div class="Brands-section">
+            <h2 class="Brandssection-title my">Exclusive Brands</h2>
             <div class="Brandslogos-container">
                 <img class="Brandslogo" src="image/Breville_Sage_Logo.png" alt="Brand Logo 1">
                 <img class="Brandslogo" src="image/Gaggia_logo.png" alt="Brand Logo 2">
@@ -923,7 +986,10 @@
     </section>
 
     <!-- footer -->
-    <footer>
+
+
+    <footer class="py roboto">
+
         <div class="waves ">
             <div class="wave" id="wave1"></div>
             <div class="wave" id="wave2"></div>
@@ -932,7 +998,7 @@
         </div>
         <div class="container">
             <div class="sec aboutus">
-                <h2>About Us</h2>
+                <h2 class="roboto">About Us</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam nemo omnis earum cum veritatis
                     accusamus, officiis praesentium nobis beatae repudiandae perspiciatis dolorem sunt, molestiae
                     accusantium ab magnam vero, exercitationem quod.</p>
@@ -944,7 +1010,7 @@
                 </ul>
             </div>
             <div class="sec quicklinks">
-                <h2>Quick links</h2>
+                <h2 class="roboto">Quick links</h2>
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">FAQ</a></li>
@@ -955,7 +1021,7 @@
                 </ul>
             </div>
             <div class="sec quicklinks">
-                <h2>Shop</h2>
+                <h2 class="roboto">Shop</h2>
                 <ul>
                     <li><a href="#">Nespresso Capsules</a></li>
                     <li><a href="#">Nespresso Machines</a></li>
@@ -966,21 +1032,20 @@
                 </ul>
             </div>
             <div class="sec contact">
-                <h2>Contact US</h2>
+                <h2 class="roboto">Contact US</h2>
                 <ul class="info">
-                    <li>
+                    <li class="address">
                         <span><i class="fa-solid fa-map"></i></span>
                         <span>647 Linda Street <br>
                             Phoenixville, PA 19640, <br>USA</span>
                     </li>
-                    <li>
+                    <li class="call">
                         <span><i class="fa-solid fa-phone"></i></span>
-                        <p><a href="tel:+12345678900">+1 234 567 8900</a><br><a href="tel:+12345678900">+1 234 567
-                                8900</a></p>
+                        <p><a href="tel:+12345678900">+1 234 567 8900</a><br><a href="tel:+12345678900">+1 234 5678900</a></p>
                     </li>
-                    <li>
+                    <li class="email">
                         <span><i class="fa-solid fa-envelope"></i></span>
-                        <p><a href="mailto:knowmore@email.com">knowmore@email.com</a></p>
+                        <p class="roboto"><a href="mailto:knowmore@email.com ">knowmore@email.com</a></p>
                     </li>
                 </ul>
             </div>
@@ -988,11 +1053,17 @@
         </div>
     </footer>
     <div class="copyrightText">
-        <p>Copyright © 2023 project js. All Rights Reserved</p>
+        <p class="roboto">Copyright © 2023 project js. All Rights Reserved</p>
     </div>
 
 </body>
-<!-- <script src="/Javascript/slider.js"></script> -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 300,
+        duration: 1000, 
+    });
+  </script>
 <script type="module" src="index.js"></script>
 <script src="/Javascript/slider.js"></script>
 <script src="Javascript/vishal.js"></script>
