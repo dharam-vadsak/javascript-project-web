@@ -68,6 +68,7 @@ a {
   /* background-color: aliceblue; */
 }
 
+
 .my{
  margin: 50px 0px;
 }
@@ -84,7 +85,6 @@ a {
 .py {
   padding-top: 80px;
   padding-bottom: 80px;
-
 }
 
 .w-50 {
@@ -223,80 +223,6 @@ img {
   padding: 15px;
 }
 
-/* .col-xs-1,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12,
-.col-sm-1,
-.col-sm-2,
-.col-sm-3,
-.col-sm-4,
-.col-sm-5,
-.col-sm-6,
-.col-sm-7,
-.col-sm-8,
-.col-sm-9,
-.col-sm-10,
-.col-sm-11,
-.col-sm-12,
-.col-md-1,
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-md-10,
-.col-md-11,
-.col-md-12,
-.col-lg-1,
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9,
-.col-lg-10,
-.col-lg-11,
-.col-lg-12,
-.col-xl-1,
-.col-xl-2,
-.col-xl-3,
-.col-xl-4,
-.col-xl-5,
-.col-xl-6,
-.col-xl-7,
-.col-xl-8,
-.col-xl-9,
-.col-xl-10,
-.col-xl-11,
-.col-xl-12,
-.col-xxl-1,
-.col-xxl-2,
-.col-xxl-3,
-.col-xxl-4,
-.col-xxl-5,
-.col-xxl-6,
-.col-xxl-7,
-.col-xxl-8,
-.col-xxl-9,
-.col-xxl-10,
-.col-xxl-11,
-.col-xxl-12 {
-  padding: 15px;
-} */
 .pt{
   padding-top: 20px;
 }
@@ -1048,52 +974,7 @@ nav ul li:hover .megamenu {
   background-color: #ca6c35;
 }
 
-/* favorite coffee  */
-/* .fc{
-  padding: 100px 0;
-}
-.fc-1{
-  box-shadow: 0 2px 3px rgb(41 45 49 / 5%), 0 0 0 1px rgb(41 45 49 / 5%);
-  transition: all 0.3s ease-in-out  ;
-}
-.fc-1:hover{
-  box-shadow: 0 8px 17px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 8%);
-  transform: scale3d(1.006, 1.006, 1);
-}
-.fc-1 h3{
-  font-size: 42px;
-  margin-bottom: 30px;
-}
-.fca{
-  width: 100%;
-  padding: 40px;
-  margin-bottom: 45px;
-}
-.fcb{
-  padding: 20px ;
-  border-top: thin solid rgba(58, 58, 58, 0.2);
-  text-align: right;
-  width: 100%;
-  align-items: end;
-}
-.fcb a{
-  color: #3a3a3a;
-}
-.fc-2{
-  box-shadow: 0 2px 3px rgb(41 45 49 / 5%), 0 0 0 1px rgb(41 45 49 / 5%);
-  transition: all 0.3s ease-in-out  ;
-}
-.fc-2:hover{
-  box-shadow: 0 8px 17px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 8%);
-  transform: scale3d(1.006, 1.006, 1);
-}
 
-.fcaa{
-  padding: 30px;
-}
-.fcaa p{
-  padding: 20px 0px;
-} */
 
 /* counter  */
 .counter {
@@ -1508,9 +1389,11 @@ nav ul li:hover .megamenu {
 /* PRODUCT PAGE DESING */
 
 /* PRODUCT PAGE DESING */
-/* #productappend {
+
+ #productappend {
   width: 100%;
   height: auto;
+
 
   }
   #productappend .col-xl-3{
@@ -1538,10 +1421,9 @@ nav ul li:hover .megamenu {
       transition: all 0.6s ease;
       font-size: 15px;
       text-transform: uppercase;
-  } */
-  /* .addtocart:hover{
+  }
 
-} */
+
 
 #productappend .col-xl-3 {
   border: 1px solid black;
@@ -1576,28 +1458,12 @@ nav ul li:hover .megamenu {
 }
 
 /* .addtocart:hover{
-
       transform: scale(1.1);
       color: white;
       background-color: rgba(0, 0, 0, 0.765);
       box-shadow: 0px 0px 15px black;
       border: none;
       cursor: pointer;      
-
-  }
-  .div3 h1{
-      margin: 20px 0px;
-      font-size: 30px;
-      margin-left: 20px;
-  }
-  .div1{
-      overflow: hidden;
-  }
-  .div1{
-    position: relative;
-  }
-.padding-0{
-
   } */
 .div3 h1 {
   margin: 20px 0px;
@@ -1614,7 +1480,6 @@ nav ul li:hover .megamenu {
 }
 
 .padding-0 {
-
   padding: 0px;
 }
 
@@ -1662,9 +1527,9 @@ nav ul li:hover .megamenu {
 .content {
   display: flex;
   flex-wrap: wrap;
-
   padding: 10px;
   width: 300px;
+  /* justify-content: center; */
 }
 
 .content h3 {
@@ -1676,59 +1541,12 @@ nav ul li:hover .megamenu {
   margin: 10px;
 }
 
-.div1 .img{
-      width: 200px;
-      margin-bottom: 40px;
-      transform: translate(-0%,-0%);
-      pointer-events: none;
-  }
-  .div3{
-      margin-top: 10px;
-  }
-  .border{
-      border: 1px solid black;
-      margin: 10px;
-  }
-  .subimg img{
-      width: 50px;
-      padding: 0px;
-      border-radius: 5px;
-      border: 1px solid rgb(0, 0, 0);
-  }
-  .imgone{
-      /* border: 1px solid black; */
-      padding: 5px;
-      width:100px;
-      margin: 10px;
-  }
-  .imgtwo{
-      /* border: 1px solid black; */
-      padding: 5px;
-      width:100px;
-      margin: 10px;
-  }
-  .producti{
-      width: 200px;
-  }
-  .img-pro img{
-      width: 100px;
-      height: 100px;
-  }
-  #hover:hover{
-      cursor: pointer;
-  }
-  .subimg img:hover{
-      cursor: pointer;
-  }
-
-
 .div1 .img {
   width: 200px;
   margin-bottom: 40px;
   transform: translate(-0%, -0%);
   pointer-events: none;
 }
-
 
 .div3 {
   margin-top: 10px;
@@ -1971,18 +1789,13 @@ nav ul li:hover .megamenu {
 }
 
 
-.subimg-show img{
-  width: 80px;
-  height: 80px;
-}
 
 .subimg-show img {
   width: 90px;
   height: 90px;
-
   padding: 5px;
   border: 1px solid black;
-  margin: 5px;
+  margin: 10px;
 
 }
 
@@ -2005,67 +1818,20 @@ nav ul li:hover .megamenu {
   font-size: 30px;
 }
 
-.addtocart{
-  padding: 8px 0px;
-}
+
 .addtocart {
   padding: 5px 0px;
-
   width: 70%;
   font-size: 20px;
   display: block;
   margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 70px;
   border-radius: 2px;
   border: none;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
-
-.addtocart:hover{
-      transform: scale(1.1);
-      color: white;
-      background-color: #dc793e;
-      box-shadow: 0px 0px 15px black;
-      border: none;
-      cursor: pointer;      
-  }
-  /* .description{
-    text-indent: 100px;
-    padding: 10px;
-    margin-top: 50px;
-    line-height: 20px;
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-  } */
-  .readmor{
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid blue;
-    margin: 0px 20px;
-    margin-top: 20px;
-    text-transform: uppercase;
-  }
-  .readmor:hover{
-    cursor: pointer;
-  }
-  .readclose{
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid blue;
-    text-transform: uppercase;
-    display: none;
-    margin: 10px 20px;
-    margin-top: 10px;
-    /* transition: all 0.4s ease; */
-  }
-  .readclose:hover{
-    cursor: pointer;
-  }
-
 
 .addtocart:hover {
   transform: scale(1.1);
@@ -2258,7 +2024,6 @@ nav ul li:hover .megamenu {
   font-weight: 900;
 }
 
-
 /* Say Hello On Instagram!*/
 #instagram-section {
   text-align: center;
@@ -2274,7 +2039,6 @@ nav ul li:hover .megamenu {
 .instagram-text {
   text-align: center;
   font-size: 18px;
-  padding: 20px 0px;
 }
 
 .instagram-text a {
@@ -2319,25 +2083,7 @@ nav ul li:hover .megamenu {
   opacity: 1;
   /* Maintain full opacity on hovered image */
 }
-.insta-img{
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-  overflow: hidden;
-  transform: scale(1);
-}
-.insta-img:hover img{
-  transform: scale(1.2);
-  filter: grayscale(0.5);
-  cursor: pointer;
-}
-.insta-img img{
-  width: 100%;
-  transition: all 0.4s ease-in-out;
-  filter: grayscale(1);
 
-
-}
 /* Exclusive Brands */
 .Brands-section {
   text-align: center;
@@ -2348,8 +2094,7 @@ nav ul li:hover .megamenu {
   font-size: 48px;
   font-weight: bold;
   color: #444444;
-  /* margin-bottom: 20px; */
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .Brandslogos-container {
@@ -2475,7 +2220,7 @@ footer .container {
 
 footer .container .sec h2 {
   position: relative;
-  color: #21253B;
+  color: #000000;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -2492,16 +2237,11 @@ footer .container .sec h2::before {
 }
 
 footer .container .sec p {
-  color: white;
-  line-height: 25px;
-  font-size: 20px;
-  /* padding:10px; */
-  padding-left: 0px;
-  padding-right: 30px;
+  color: #fff;
 }
 
 .sci {
-  margin-top: 45px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 50px);
   grid-gap: 10px;
@@ -2510,28 +2250,20 @@ footer .container .sec p {
 .sci li {
   list-style: none;
 }
-.sci li a i{
-  font-size: 20px;
-  color: #21253B;
-}
+
 .sci li a {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background: rgba(255, 255, 255, 0.639);
-  backdrop-filter: blur(10px);
+  background: #156ae9;
   display: grid;
   align-content: center;
   justify-content: center;
   border-radius: 50px;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
 }
 
 .sci li a:hover {
- background-color: white;
- box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.591);
- transform: scale(1.1);
+  background: #6380fe;
 }
 
 .sci li a .fa {
@@ -2545,13 +2277,12 @@ footer .container .sec p {
 
 .quicklinks li {
   list-style: none;
-  font-size: 20px;
 }
 
 .quicklinks li a {
   color: #f7f7f7;
   text-decoration: none;
-  padding: 9px 0px;
+  margin-bottom: 10px;
   display: inline-block;
 }
 
@@ -2576,8 +2307,6 @@ footer .container .sec p {
 
 .info li span {
   color: #fff;
-  font-size: 20px;
-  padding: 10px 0px;
 }
 .info li .spanp:hover{
   color: black;
@@ -2598,7 +2327,6 @@ footer .container .sec p {
   padding: 8px 100px;
   text-align: center;
   color: #fff;
-
 }
 footer .call ,.email,.address{
   position: relative;
