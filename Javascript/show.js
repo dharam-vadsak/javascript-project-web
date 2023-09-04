@@ -1,19 +1,34 @@
+
+import { footer, header} from "../component/load.js";
+document.getElementById("showhead").innerHTML=header()
+document.getElementById("footershow").innerHTML=footer()
+let productstor=JSON.parse(localStorage.getItem("product"))
+console.log(productstor)
+document.title=""
+let signup=localStorage.getItem("signup")
+if(signup){
+    document.getElementById("homesign").style.display="none"
+    document.getElementById("login").style.display="none"
+    document.getElementById("logout").style.display="block"
+    document.querySelector(".carticon").style.display="none"
+
+}
 import { footer } from "../component/load.js";
 
 document.getElementById("footershow").innerHTML=footer
 // document.getElementById("footerdiv").innerHTML=load()
 let productstor=JSON.parse(localStorage.getItem("product"))
 document.title=""
-console.log(productstor);
-// let qytco=localStorage.getItem("qyt")
-// console.log(qytco);
+console.log(productstor)
 let data=[]
 data.push(productstor)
 let qytco=data[0].qyt
 
+const aa=(data)=>{
+    data.map((ele)=>{
+        document.title=ele.title 
 
 const aa=(data)=>{
-    // console.log(data);
     data.map((ele)=>{
         document.title=ele.title
         console.log(ele.title);
@@ -94,6 +109,7 @@ const aa=(data)=>{
         addtocart.innerHTML="add to cart"
         addtocart.setAttribute("class","addtocart")
         addtocart.addEventListener("click",()=>{
+            if(signup){
             fetch(`http://localhost:3000/cart?id=${ele.id}`)
             .then((res)=>res.json())
             .then((data)=>{
@@ -115,10 +131,15 @@ const aa=(data)=>{
                     alert("Product Added To Cart !")
                 }
             })
+        }else{
+            alert("plz login || sing-up")
+            window.location.href="/Page/sign.html"
+        }
         })
         contetdiv.append(title,description,readbtn,closemore,addtocart)
 
         let row=document.createElement("div")
+        row.setAttribute("class","row")
         row.setAttribute("class","row pb")
         let col=document.createElement("div")
         col.setAttribute("class","col-xl-12")
@@ -127,6 +148,7 @@ const aa=(data)=>{
         div.setAttribute("class","div")
         col.append(div)
         div.append(imgdiv,contetdiv)
+        document.querySelector(".section").append(row)
         document.querySelector("section").append(row)
     })
 }
@@ -137,6 +159,14 @@ const get=()=>{
     .then((res)=>res.json())
     .then((data)=>{
         aa(data)
+        
+    })
+}
+
+const cart=()=>{
+    fetch("http://localhost:3000/cart")
+    .then((res)=>res.json())
+    .then((data)=>{
         let dat=data.length
         if(data.length>0){
             document.querySelector(".cart-s").innerHTML=dat
@@ -146,6 +176,7 @@ const get=()=>{
         }
     })
 }
+cart()
 get()
 
 // aa()

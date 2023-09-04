@@ -123,6 +123,13 @@ const cart=(data)=>{
 
 
 
+let ig =document.querySelector(".loader-one")
+console.log(ig);
+
+window.addEventListener("load",()=>{
+    ig.style.display="none"
+    
+})
 
 
 
@@ -144,6 +151,7 @@ data.map((ele)=>{
 
 }
 
+
 let ig =document.querySelector(".loader-one")
 console.log(ig);
 
@@ -159,12 +167,21 @@ const get=()=>{
         cart(data)
         totle(data)
         let dat=data.length
+
+            if(data.length>0){
+                document.querySelector(".cart-s").innerHTML=dat
+            }
+            else{
+                document.querySelector(".cart-s").style.display="none"
+            }
+
         if(data.length>0){
             document.querySelector(".cart-s").innerHTML=dat
         }
         else{
             document.querySelector(".cart-s").style.display="none"
         }
+
     })
 }
 get()

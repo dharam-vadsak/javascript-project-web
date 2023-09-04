@@ -9,7 +9,34 @@
   max-width: 1140px;
   margin: auto;
 }
-
+.carticon button{
+  background-color: rgb(240, 176, 39);
+  padding: 8px 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  margin-right: 10px;
+  position: relative;
+}
+.carticon i{
+  color: #000;
+  font-size: 15px;
+}
+.carticon .cart-s{
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.63);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  top:-10px;
+  right: -8px; 
+  color: black;
+}
 /* COMMON PROPERTY */
 :root {
   --black: black;
@@ -85,6 +112,25 @@ a {
 .py {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.my{
+ margin: 50px 0px;
+}
+.mb{
+  margin-bottom: 40px;
+}
+.py{
+  padding: 100px 0px;
+}
+.pb{
+  padding-bottom: 100px;
+}
+
+.py {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
 }
 
 .w-50 {
@@ -228,11 +274,18 @@ img {
 }
 
 /* FONTS */
-
+header{
+  padding-bottom: 30px;
+}
+.padd{
+  padding: 20px;
+}
 .abril {
   font-family: 'Abril Fatface';
 }
-
+.mx{
+  margin: auto;
+}
 .roboto {
   font-family: 'Roboto Condensed';
 }
@@ -408,6 +461,267 @@ header .btn #login ,header .btn #signup {
   margin-top: 10px;
   margin-left: 30px;
   margin-bottom: 20px;
+  border-radius: 20px;
+  text-align: center;
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+#addproduct:hover {
+  transform: scale(1.1);
+  border: 1px solid black;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+
+header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.megamenu {
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.nav-img img {
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.megamenu {
+  position: absolute;
+  width: 1000px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 65px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #EDEFF2;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 10;
+  height: 500px;
+  overflow: auto;
+  border-radius: 50px;
+}
+
+
+.megamenu ul li a {
+  text-transform: capitalize;
+  font-weight: normal;
+  padding: 5px 0;
+  position: relative;
+}
+
+.megamenu ul li:hover a {
+  letter-spacing: normal;
+}
+
+.megamenu ul li a::after {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  content: "";
+  background-color: var(--blue-200);
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.megamenu ul li:hover a::after {
+  width: 100%;
+}
+
+nav ul li:hover .megamenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* LOGIN */
+
+.inner-login {
+  background: #FFFFFF;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -.02em;
+}
+
+.inner-login img {
+  margin-right: 16px;
+}
+
+.inner-login span {
+  margin: 0 8px;
+}
+
+
+.f-18 {
+  font-size: 18px;
+}
+.loader-one{
+  position: absolute;
+  top: 0;
+  bottom: 0;right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 999999;
+}
+
+
+/* HEADER Vatsal*/
+
+header nav ul li {
+  padding: 20px 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+header nav ul li a {
+  color: var(--black);
+}
+
+header .btn {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+header .btn a {
+  color: var(--black);
+  padding: 0px 10px;
+  padding: 5px 20px;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+#user-profile {
+  display: none;
+  width: 200px;
+  height: 100vh;
+  border: 1px solid black;
+  float: right;
+  position: absolute;
+  z-index: 9999;
+  background-color: var(--white);
+  right: 0;
+  top: 64px;
+}
+
+#user-profile div {
+  text-align: center;
+}
+
+#user-profile .singleuser {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+#user-profile i {
+  font-size: 17px;
+  padding: 5px;
+  background-color: red;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 20%;
+  color: var(--white);
+}
+
+#user-profile i:hover {
+  color: var(--black);
+}
+
+#user-profile #logout {
+  margin-left: 20px;
+  padding: 5px 10px;
+  background-color: white;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 10px rgba(8, 8, 8, 0.2);
+  bottom: 0px 0px 10px;
+  color: black;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+#user-profile #logout:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(8, 8, 8, 0.422);
+  background-color: red;
+  border: 1px solid black;
+  color: var(--white);
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin: 0px 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn a {
+  margin: 0px 5px;
+}
+
+.user-photo {
+  font-size: 14px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.userfile {
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+#logout {
+  display: none;
+}
+
+#profile img {
+  background-size: cover;
+}
+
+#addproduct {
+  margin-left: 20px;
+  padding: 5px 10px;
+  background-color: white;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 10px rgba(8, 8, 8, 0.2);
+  bottom: 0px 0px 10px;
+  color: black;
+  display: inline-block;
+  /* width: 50%; */
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 30px;
   border-radius: 20px;
   text-align: center;
   transform: scale(1);
@@ -696,7 +1010,186 @@ nav ul li:hover .megamenu {
 
 }
 
+.text-apple {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
+
+.shop_menu {
+  list-style: none;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.slide-nav__item {
+  width: 100%;
+}
+
+.shop_menu .slide-nav__item:nth-child(odd) {
+  background-color: #F5F7FA;
+
+}
+
+.slide-nav_link {
+  padding: 17px 12px 17px 20px;
+  font-size: 18px;
+  line-height: 1.78;
+  letter-spacing: -.02em;
+  display: block;
+}
+
+
+.menu_split_label {
+  font-size: 10px;
+  font-weight: 900;
+  background: #FBFF27;
+  padding: 3px 4px;
+  border-radius: 4px;
+  color: #000;
+  margin-left: 5px;
+}
+
+.shop_menu .slide-nav__item:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+.shop_block {
+  padding: 12px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.shop_block_image {
+  margin-right: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+
+/* banner slider */
+
+
+.sliderWrapper {
+
+  height: 550px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.sliderWrapper .slider {
+  /* background: #aaa; */
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.sliderWrapper .slider .slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.sliderWrapper .slider .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.sliderWrapper .slider-navigation {
+  bottom: -24px;
+  color: #333;
+  left: 2px;
+  position: absolute;
+  z-index: 10;
+
+  transition-property: bottom;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.sliderWrapper:hover .slider-navigation {
+  bottom: 2px;
+}
+
+.sliderWrapper .slider-navigation .slider-navigation-item {
+  cursor: pointer;
+  background: #eee;
+  border-radius: 100%;
+  box-shadow: 0;
+  display: inline-block;
+
+  height: 12px;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-indent: -9999px;
+  width: 12px;
+
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.sliderWrapper:hover .slider-navigation .slider-navigation-item {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.sliderWrapper .slider-navigation .slider-navigation-item.active {
+  background: #333;
+  color: #eee;
+}
+
+
+
+/* home second section revolution */
+.revolution {
+  padding: 60px 0px;
+}
+
+.revolution .box-img {
+  margin-top: 20px;
+}
+
+.revolution a {
+  color: #6667ab;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-bottom: #6667ab solid 1px;
+}
+
+
+.revolution .sub-heading {
+  margin-bottom: 20px;
+}
+
+.revolution .sub-heading p {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #444444;
+  font-weight: 500;
+
+}
+
+.revolution .content {
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #5c5c5c;
+  margin-bottom: 20px;
+  /* padding-right: 200px; */
+}
+
+
+.revolution .heading {
+  margin-bottom: 20px;
+
+}
 .revolution .heading h1 {
   font-weight: 700;
   font-size: 30px;
@@ -1047,224 +1540,6 @@ nav ul li:hover .megamenu {
   background-color: #ca6c35;
 }
 
-/* favorite coffee  */
-
-/* .fc{
-    padding: 100px 0;
-  }
-  .fc-1{
-    box-shadow: 0 2px 3px rgb(41 45 49 / 5%), 0 0 0 1px rgb(41 45 49 / 5%);
-    transition: all 0.3s ease-in-out  ;
-  }
-  .fc-1:hover{
-    box-shadow: 0 8px 17px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 8%);
-    transform: scale3d(1.006, 1.006, 1);
-  }
-  .fc-1 h3{
-    font-size: 42px;
-    margin-bottom: 30px;
-  }
-  .fca{
-    width: 100%;
-    padding: 40px;
-    margin-bottom: 45px;
-  }
-  .fcb{
-    padding: 20px ;
-    border-top: thin solid rgba(58, 58, 58, 0.2);
-    text-align: right;
-    width: 100%;
-    align-items: end;
-  }
-  .fcb a{
-    color: #3a3a3a;
-  }
-  .fc-2{
-    box-shadow: 0 2px 3px rgb(41 45 49 / 5%), 0 0 0 1px rgb(41 45 49 / 5%);
-    transition: all 0.3s ease-in-out  ;
-  }
-  .fc-2:hover{
-    box-shadow: 0 8px 17px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 8%);
-    transform: scale3d(1.006, 1.006, 1);
-  }
-  
-  .fcaa{
-    padding: 30px;
-  }
-  .fcaa p{
-    padding: 20px 0px;
-  }  */
-
-/* counter  */
-/* .counter{
-    background-color:#21253B;
-    padding: 20px 0;
-  }
-  .counter .count{
-    border-radius: 20px;
-  }
-  .count-i{
-    background-color: #c19e0b;
-    padding: 20px;
-    border-radius: 50%;
-    font-size: 40px;
-  }
-  .count h1{
-    font-size: 50px;
-    padding: 20px 0px;
-    font-weight: 900;
-    color: var(--white);
-  }
-  .count h3{
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.668);
-  }
-  .count-d{
-    padding-left: 20px;
-  }  */
-
-/* JEEL CSS */
-
-/* SIGN PAEG DE */
-
-/* .form-img {
-        padding: 0px;
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 120px;
-        margin: auto;
-    }
-    
-    .overly {
-        background-color: rgba(0, 0, 0, 0.443);
-        padding: 50px;
-    }
-    
-    .div .sing-form {
-        background-image: url(https://wallpapers.com/images/hd/coffee-background-zu86bzy6rhsekc52.jpg);
-        background-size: cover;
-    
-    }
-    
-    #sign {
-        background-color: rgba(240, 248, 255, 0.292);
-        backdrop-filter: blur(5px);
-        width: 300px;
-        margin: auto;
-        padding: 20px 10px;
-        color: var(--white);
-        text-transform: capitalize;
-    }
-    
-    #sign .email {
-        margin-left: 33px;
-    }
-    
-    #sign .last {
-        margin-left: 2px;
-    }
-    
-    #sign .password {
-        margin-left: 10px;
-    }
-    
-    #sign input {
-        margin: 5px 0px;
-    }
-    
-    #userurl {
-        margin-left: 40px;
-    }
-    
-    .userfile {
-        padding: 5px 40px;
-    }
-    
-    #sign button {
-        padding: 5px 20px;
-        display: block;
-        margin: auto;
-        margin-top: 15px;
-        background-color: cornflowerblue;
-        border: 1px solid black;
-        border-radius: 2px;
-        color: var(--white);
-        font-size: 15px;
-    }
-    
-    .sign-icon {
-        position: relative;
-    }
-    
-    .sign-icon .fa-check {
-        position: absolute;
-        right: 30px;
-        top: 5px;
-        color: green;
-        display: none;
-    }
-    
-    .sign-icon .fa-xmark {
-        position: absolute;
-        right: 30px;
-        top: 5px;
-        color: red;
-        display: none;
-    }
-    
-    .pass-icon {
-        position: relative;
-    }
-    
-    .pass-icon i {
-        position: absolute;
-        right: 30px;
-        top: 7px;
-        color: black;
-        font-size: 13px;
-    }
-    
-    .first,
-    .lastt,
-    .emaill,
-    .passwordd {
-        font-size: 12px;
-        margin-left: 85px;
-        font-weight: 100;
-        color: rgba(255, 0, 0, 0.932);
-        padding: 0px 17px 0px 0px;
-    }
-    
-    .emaill {
-        font-size: 12px;
-        text-transform: lowercase;
-        margin-left: 85px;
-        font-weight: 100;
-        color: rgba(255, 0, 0, 0.932);
-        padding: 0px 17px 0px 0px;
-    }
-    
-    #userprofile {
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
-    }
-    
-    .div .chenglogin {
-        margin: 20px;
-        text-align: center;
-        font-size: 13px;
-        padding: 10px 0px;
-        border: 2px dashed black;
-    }
-    
-    .div .chenglogin a {
-        color: red;
-        font-size: 15px;
-        font-weight: 900;
-    }
- */
 
 /* ADD PRODUCT PAGE */
 
@@ -1388,13 +1663,16 @@ nav ul li:hover .megamenu {
 
 /* PRODUCT PAGE DESING */
 
-/* PRODUCT PAGE DESING */
+
+
+#productappend {
+  width: 100%;
+  height: auto;
+  }
 
  #productappend {
   width: 100%;
   height: auto;
-
-
   }
   #productappend .col-xl-3{
       border: 1px solid black;
@@ -1422,6 +1700,12 @@ nav ul li:hover .megamenu {
       font-size: 15px;
       text-transform: uppercase;
   }
+
+  .addtocart:hover{
+
+}
+
+
 
 
 
@@ -1457,14 +1741,7 @@ nav ul li:hover .megamenu {
   text-transform: uppercase;
 }
 
-/* .addtocart:hover{
-      transform: scale(1.1);
-      color: white;
-      background-color: rgba(0, 0, 0, 0.765);
-      box-shadow: 0px 0px 15px black;
-      border: none;
-      cursor: pointer;      
-  } */
+ 
 .div3 h1 {
   margin: 20px 0px;
   font-size: 30px;
@@ -1479,7 +1756,7 @@ nav ul li:hover .megamenu {
   position: relative;
 }
 
-.padding-0 {
+
   padding: 0px;
 }
 
@@ -1520,16 +1797,14 @@ nav ul li:hover .megamenu {
   background-color: #111;
   color: white;
   box-shadow: 0px 0px 10px white;
-  /* font-weight: 900; */
-}
 
+}
 
 .content {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
   width: 300px;
-  /* justify-content: center; */
 }
 
 .content h3 {
@@ -1541,13 +1816,53 @@ nav ul li:hover .megamenu {
   margin: 10px;
 }
 
+.div1 .img{
+      width: 200px;
+      margin-bottom: 40px;
+      transform: translate(-0%,-0%);
+      pointer-events: none;
+  }
+ 
+  .border{
+      border: 1px solid black;
+      margin: 10px;
+  }
+  .subimg img{
+      width: 50px;
+      padding: 0px;
+      border-radius: 5px;
+      border: 1px solid rgb(0, 0, 0);
+  }
+  .imgone{
+      padding: 5px;
+      width:100px;
+      margin: 10px;
+  }
+  .imgtwo{
+      padding: 5px;
+      width:100px;
+      margin: 10px;
+  }
+  .producti{
+      width: 200px;
+  }
+  .img-pro img{
+      width: 100px;
+      height: 100px;
+  }
+  #hover:hover{
+      cursor: pointer;
+  }
+  .subimg img:hover{
+      cursor: pointer;
+  }
+
 .div1 .img {
   width: 200px;
   margin-bottom: 40px;
   transform: translate(-0%, -0%);
   pointer-events: none;
 }
-
 .div3 {
   margin-top: 10px;
 }
@@ -1565,14 +1880,12 @@ nav ul li:hover .megamenu {
 }
 
 .imgone {
-  /* border: 1px solid black; */
   padding: 5px;
   width: 100px;
   margin: 10px;
 }
 
 .imgtwo {
-  /* border: 1px solid black; */
   padding: 5px;
   width: 100px;
   margin: 10px;
@@ -1790,13 +2103,15 @@ nav ul li:hover .megamenu {
 
 
 
+
+
+
 .subimg-show img {
   width: 90px;
   height: 90px;
   padding: 5px;
   border: 1px solid black;
-  margin: 10px;
-
+  margin: 5px;
 }
 
 .subimg-show img:hover {
@@ -1819,13 +2134,15 @@ nav ul li:hover .megamenu {
 }
 
 
+
 .addtocart {
   padding: 5px 0px;
   width: 70%;
   font-size: 20px;
   display: block;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   border-radius: 2px;
   border: none;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -1833,14 +2150,39 @@ nav ul li:hover .megamenu {
   text-transform: uppercase;
 }
 
-.addtocart:hover {
-  transform: scale(1.1);
-  color: white;
-  background-color: #dc793e;
-  box-shadow: 0px 0px 15px black;
-  border: none;
-  cursor: pointer;
-}
+
+.addtocart:hover{
+      transform: scale(1.1);
+      color: white;
+      background-color: #dc793e;
+      box-shadow: 0px 0px 15px black;
+      border: none;
+      cursor: pointer;      
+  }
+ 
+  .readmor{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid blue;
+    margin: 0px 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .readmor:hover{
+    cursor: pointer;
+  }
+  .readclose{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid blue;
+    text-transform: uppercase;
+    display: none;
+    margin: 10px 20px;
+    margin-top: 10px;
+  }
+  .readclose:hover{
+    cursor: pointer;
+  }
 
 .description {
   text-indent: 100px;
@@ -2024,6 +2366,7 @@ nav ul li:hover .megamenu {
   font-weight: 900;
 }
 
+
 /* Say Hello On Instagram!*/
 #instagram-section {
   text-align: center;
@@ -2039,6 +2382,8 @@ nav ul li:hover .megamenu {
 .instagram-text {
   text-align: center;
   font-size: 18px;
+  padding: 20px 0px;
+
 }
 
 .instagram-text a {
@@ -2084,6 +2429,27 @@ nav ul li:hover .megamenu {
   /* Maintain full opacity on hovered image */
 }
 
+.insta-img{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  overflow: hidden;
+  transform: scale(1);
+}
+.insta-img:hover img{
+  transform: scale(1.2);
+  filter: grayscale(0.5);
+  cursor: pointer;
+}
+.insta-img img{
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(1);
+
+
+}
+
+
 /* Exclusive Brands */
 .Brands-section {
   text-align: center;
@@ -2094,7 +2460,12 @@ nav ul li:hover .megamenu {
   font-size: 48px;
   font-weight: bold;
   color: #444444;
+
+  /* margin-bottom: 20px; */
+  padding-bottom: 20px;
+
   margin-bottom: 20px;
+
 }
 
 .Brandslogos-container {
@@ -2220,7 +2591,8 @@ footer .container {
 
 footer .container .sec h2 {
   position: relative;
-  color: #000000;
+
+  color: #21253B;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -2233,10 +2605,19 @@ footer .container .sec h2::before {
   width: 50px;
   height: 2px;
   background: #ffeb3b;
-  ;
+
 }
 
 footer .container .sec p {
+  color: white;
+  line-height: 25px;
+  font-size: 20px;
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+.sci {
+  margin-top: 45px;
   color: #fff;
 }
 
@@ -2250,16 +2631,30 @@ footer .container .sec p {
 .sci li {
   list-style: none;
 }
+.sci li a i{
+  font-size: 20px;
+  color: #21253B;
+}
 
 .sci li a {
   display: inline-block;
   width: 48px;
   height: 48px;
+  background: rgba(255, 255, 255, 0.639);
+  backdrop-filter: blur(10px);
   background: #156ae9;
   display: grid;
   align-content: center;
   justify-content: center;
   border-radius: 50px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.sci li a:hover {
+ background-color: white;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.591);
+ transform: scale(1.1);
 }
 
 .sci li a:hover {
@@ -2277,17 +2672,19 @@ footer .container .sec p {
 
 .quicklinks li {
   list-style: none;
+  font-size: 20px;
 }
 
 .quicklinks li a {
   color: #f7f7f7;
   text-decoration: none;
+  padding: 9px 0px;
   margin-bottom: 10px;
   display: inline-block;
 }
 
 .quicklinks li a:hover {
-  color: black;
+  color: #ffeb3b;
 }
 
 .info {
@@ -2307,6 +2704,8 @@ footer .container .sec p {
 
 .info li span {
   color: #fff;
+  font-size: 20px;
+  padding: 10px 0px;
 }
 .info li .spanp:hover{
   color: black;
@@ -2318,6 +2717,7 @@ footer .container .sec p {
 }
 
 .info a:hover {
+  color: #ffeb3b;
   color: black;
 }
 
@@ -2340,21 +2740,6 @@ footer .call i{
   top: -6px;
 }
 
-
-/* .loader .loader-img{
-  background-image: url(../image/c-1.png);
-  background-size: contain;
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 999999999999999999999999999;
-} */
 #image-loader{
   position: absolute;
   z-index: 9999;
@@ -2465,6 +2850,8 @@ footer .call i{
   margin-left: 5px;
 }
 
+
+
     /* CART PAGE DESING */
 .imgbox{
   width: 300px;
@@ -2563,3 +2950,4 @@ width: 25px;
   font-size: 20px;
   border: 1px solid gray;
 }
+

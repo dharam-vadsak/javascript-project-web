@@ -83,9 +83,15 @@ const header=()=>{
             <nav>
                 <ul class="row ">
                     <li>
+
+                        <a href="/index.html" style="font-weight: 700;font-size: 15px;">home</a>
+                    </li>
+                    <li><a href="/Page/product.html" style="font-weight: 700;font-size: 15px;">product</a></li>
+
                         <home href="/index.html" style="font-weight: 700;font-size: 15px;">home</a>
                     </li>
                     <li><a href="Page/product.html" style="font-weight: 700;font-size: 15px;">product</a></li>
+
                     <li>
                         <a href="#" style="font-weight: 700 ;font-size: 15px;">Category
                         </a>
@@ -102,7 +108,11 @@ const header=()=>{
                                                 alt="">
                                             <a href="/Page/login.html">Login</a>
                                             <span>•</span>
+
+                                            <a href="/Page/singup.html" id="signup">Sign Up</a>
+
                                             <a href="/Page/singup.html">Sign Up</a>
+
                                         </div>
                                     </div>
                                     <div class="shop_inner_menu text-apple f-18">
@@ -174,6 +184,7 @@ const header=()=>{
 
                                                     <div class="shop_block_text">
 
+                                                        <p class="shop_block_heading" id="ncc"> Nespresso Coffee Capsules</p>
                                                         <p class="shop_block_heading" onclick="category(NespressoCoffeeCapsules)"> Nespresso Coffee Capsules</p>
 
 
@@ -400,10 +411,17 @@ const header=()=>{
             </nav>
             <div class="btn">
                 <a href="/Page/login.html" id="login">login</a>
+
+                <a href="/Page/sign.html" id="homesign">sign-up</a>
+                <div class="carticon">
+                    <button class="">
+                        <a href="/Page/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+
                 <a href="/Page/sign.html" id="signup">sign-up</a>
                 <div class="carticon">
                     <button class="">
                         <a href="Page/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+
                         <div class="cart-s"></div>
                     </button>
                     
@@ -415,7 +433,11 @@ const header=()=>{
             <a href=""><i class="fa-solid fa-xmark" id="close"></i></a>
             <div class="profile" id="profilee">
             </div>
+
+            <a href="#" id="logout">logout</a>
+
             <a href="Page/sign.html" id="logout">logout</a>
+
             <a href="/Page/addproduct.html" id="addproduct">Add Product</a>
         </aside>
     </div>
@@ -451,7 +473,11 @@ const prohead=()=>{
                                                 alt="">
                                             <a href="/Page/login.html">Login</a>
                                             <span>•</span>
+
+                                        <a href="/Page/singup.html" id="singup>Sign Up</a>
+
                                             <a href="/Page/singup.html">Sign Up</a>
+
                                         </div>
                                     </div>
                                     <div class="shop_inner_menu text-apple f-18">
@@ -757,6 +783,7 @@ const prohead=()=>{
             <a href=""><i class="fa-solid fa-xmark" id="close"></i></a>
             <div class="profile" id="profilee">
             </div>
+            <a href="#" id="logout">logout</a>
             <a href="Page/sign.html" id="logout">logout</a>
             <a href="/Page/addproduct.html" id="addproduct">Add Product</a>
         </aside>
