@@ -1,4 +1,4 @@
-// spotlight click 
+
 document.getElementById("nc").addEventListener("click",(e)=>{
     e.preventDefault();
 

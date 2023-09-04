@@ -24,7 +24,6 @@ document.getElementById("shopaa").addEventListener("click",forpaa)
 
 document.getElementById("forget").addEventListener("click",(e)=>{
 e.preventDefault()
-// alert("yes")
 document.querySelector(".email-cheak").style.display="block"
 })
 let id=-1
@@ -37,7 +36,6 @@ document.getElementById("forget-check").addEventListener("submit",(e)=>{
     .then((res)=>res.json())
     .then((data)=>{
         if(data.length>0){
-            // console.log(data[0].id);
             id=data[0].id;
             console.log(id);
             document.querySelector(".pass-cheak").style.display="block"

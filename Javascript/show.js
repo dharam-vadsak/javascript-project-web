@@ -3,7 +3,6 @@ import { footer, header} from "../component/load.js";
 document.getElementById("showhead").innerHTML=header()
 document.getElementById("footershow").innerHTML=footer()
 let productstor=JSON.parse(localStorage.getItem("product"))
-console.log(productstor)
 document.title=""
 let signup=localStorage.getItem("signup")
 if(signup){
@@ -13,20 +12,10 @@ if(signup){
     document.querySelector(".carticon").style.display="none"
 
 }
-import { footer } from "../component/load.js";
-
-document.getElementById("footershow").innerHTML=footer
-// document.getElementById("footerdiv").innerHTML=load()
-let productstor=JSON.parse(localStorage.getItem("product"))
-document.title=""
-console.log(productstor)
 let data=[]
 data.push(productstor)
 let qytco=data[0].qyt
 
-const aa=(data)=>{
-    data.map((ele)=>{
-        document.title=ele.title 
 
 const aa=(data)=>{
     data.map((ele)=>{
@@ -34,8 +23,6 @@ const aa=(data)=>{
         console.log(ele.title);
         let imgdiv=document.createElement("div")
         imgdiv.setAttribute("class","imgdiv")
-        
-
 
         let img=document.createElement("img")
         img.setAttribute("id",`mainimg`)
@@ -149,7 +136,7 @@ const aa=(data)=>{
         col.append(div)
         div.append(imgdiv,contetdiv)
         document.querySelector(".section").append(row)
-        document.querySelector("section").append(row)
+
     })
 }
 
@@ -178,5 +165,3 @@ const cart=()=>{
 }
 cart()
 get()
-
-// aa()

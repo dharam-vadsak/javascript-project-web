@@ -1,11 +1,10 @@
 
-// import { header } from "../component/load"
+
 import { footer,  header,load } from "/component/load.js"
 document.getElementById("produloder").innerHTML=load()
 document.getElementById("footerprodu").innerHTML=footer()
 document.getElementById("producthead").innerHTML=header()
 let sing=localStorage.getItem("signup")
-console.log(sing);
 let cat=localStorage.getItem("cat")
 let products=[]
 if(sing){
@@ -16,17 +15,13 @@ if(sing){
 
 }
 const serch=()=>{
-    let value=document.getElementById("serch").value 
-    // console.log(data);
+    let value=document.getElementById("serch").value
     let stro=products.filter((ele)=>ele.title.toLowerCase().match(value.toLowerCase()))
     product(stro)
-    console.log(stro);
+ 
 }
 
 document.getElementById("serch").addEventListener("keypress",(e)=>{
-    // let value=document.getElementById("serch").value 
-    // console.log(value);
-
     if(e.key=="Enter"){
         serch()
     }
@@ -48,10 +43,12 @@ document.getElementById("produloder").innerHTML=load()
 document.getElementById("footerprodu").innerHTML=footer()
 document.getElementById("producthead").innerHTML=prohead()
 let sing=localStorage.getItem("sing")
+
 const product=(data)=>{
+    document.querySelector(".claa").innerHTML=""
     data.map((ele)=>{
         let div1=document.createElement("div")
-        div1.setAttribute("class","div1")
+        div1.setAttribute("class","div1 padding-0")
 
         div1.setAttribute("id","hover")
         let img=document.createElement("img")
@@ -90,6 +87,11 @@ const product=(data)=>{
         div.setAttribute("class","productd ")
         div.append(div1,content)
         col.append(div)
+        row.append(col)
+        let div=document.createElement("div")
+        div.setAttribute("class","productd ")
+        div.append(div1,content)
+        col.append(div)
         document.querySelector(".claa").append(col)
     })
 }
@@ -114,7 +116,19 @@ document.getElementById("all").addEventListener("click",()=>{
         document.querySelector(".claa").append(col)
     })
 }
-
+document.getElementById("lth").addEventListener("click",()=>{
+    let lth=products.sort((a,b)=>a.price-b.price)
+    console.log(lth);
+    product(lth)
+})
+document.getElementById("htl").addEventListener("click",()=>{
+    let htl=products.sort((a,b)=>b.price-a.price)
+    console.log(lth);
+    product(htl)
+})
+document.getElementById("all").addEventListener("click",()=>{
+    product(get())
+})
 let ig =document.querySelector(".loader-one")
 console.log(ig);
 
@@ -123,6 +137,14 @@ window.addEventListener("load",()=>{
     
 })
 
+
+let ig =document.querySelector(".loader-one")
+console.log(ig);
+
+window.addEventListener("load",()=>{
+    ig.style.display="none"
+    
+})
 
 
 const get =async()=>{
@@ -134,14 +156,7 @@ const get =async()=>{
         product(data)
     })
 }
-const get =()=>{
-    fetch(`http://localhost:3000/product`)
-    .then((res)=>res.json())
-    .then((data)=>{
-        product(data)
-        
-    })
-}
+
 const cartget=()=>{
     fetch("http://localhost:3000/cart")
     .then((res)=>res.json())

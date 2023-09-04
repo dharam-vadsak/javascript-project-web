@@ -159,7 +159,6 @@ window.addEventListener("load",()=>{
     ig.style.display="none"
     
 })
-
 const get=()=>{
     fetch(` http://localhost:3000/cart`)
     .then((res)=>res.json())
@@ -174,14 +173,6 @@ const get=()=>{
             else{
                 document.querySelector(".cart-s").style.display="none"
             }
-
-        if(data.length>0){
-            document.querySelector(".cart-s").innerHTML=dat
-        }
-        else{
-            document.querySelector(".cart-s").style.display="none"
-        }
-
     })
 }
 get()

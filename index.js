@@ -5,18 +5,16 @@ document.getElementById("homeloader").innerHTML=load()
 document.getElementById("homehead").innerHTML=header()
 let stro=JSON.parse(localStorage.getItem("user"))
 let sign=localStorage.getItem("signup")
+console.log(sign);
 if(sign){
     document.getElementById("homesign").style.display="none"
     document.getElementById("login").style.display="none"
     document.getElementById("logout").style.display="block"
     document.querySelector(".carticon").style.display="block"
 
+
 }
-if(!(sign)){
-    document.getElementById("profile").style.display="none"
-    document.querySelector("aside").style.display="none"
-    document.querySelector(".carticon").style.display="none"
-}
+
 
 const logout=()=>{
     document.querySelector(".carticon").style.display="none"
@@ -26,7 +24,7 @@ const logout=()=>{
     document.getElementById("profile").style.display="none"
     document.querySelector("aside").style.display="none"
     localStorage.removeItem("signup")
-  )
+
 }
 document.getElementById("logout").addEventListener("click",logout)
 
@@ -66,6 +64,7 @@ document.getElementById("close").addEventListener("click",(e)=>{
     e.preventDefault()
     document.getElementById("user-profile").style.display="none"
 })
+
 let ig =document.querySelector(".loader-one")
 console.log(ig);
 
@@ -77,6 +76,7 @@ window.addEventListener("load",()=>{
 
 
 let data2=[]
+
 const ncc=(data)=>{
     let temp=[]
     data2.map((ele)=>{
@@ -84,12 +84,14 @@ const ncc=(data)=>{
             temp.push(ele)
         }
     })
+
     product(temp)
     localStorage.setItem("cat",JSON.stringify(temp))
 }
 
 
 document.getElementById("ncc").addEventListener("click",()=>ncc("habitatnespressocompatiblecoffeecapsules"))
+
 
 const get=()=>{
     fetch(" http://localhost:3000/cart")
