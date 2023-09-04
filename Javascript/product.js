@@ -1,4 +1,5 @@
 
+
 import { footer,  header,load } from "/component/load.js"
 document.getElementById("produloder").innerHTML=load()
 document.getElementById("footerprodu").innerHTML=footer()
@@ -17,11 +18,10 @@ const serch=()=>{
     let value=document.getElementById("serch").value
     let stro=products.filter((ele)=>ele.title.toLowerCase().match(value.toLowerCase()))
     product(stro)
-    console.log(stro);
+ 
 }
 
 document.getElementById("serch").addEventListener("keypress",(e)=>{
-
     if(e.key=="Enter"){
         serch()
     }
@@ -31,6 +31,18 @@ document.getElementById("serch").addEventListener("input",()=>{
 })
  
 
+
+const product=(data)=>{
+    document.querySelector(".claa").innerHTML=""
+    data.map((ele)=>{
+        let div1=document.createElement("div")
+        div1.setAttribute("class","div1 padding-0")
+// import { prohead } from "../component/load"
+import { footer, load,prohead } from "/component/load.js"
+document.getElementById("produloder").innerHTML=load()
+document.getElementById("footerprodu").innerHTML=footer()
+document.getElementById("producthead").innerHTML=prohead()
+let sing=localStorage.getItem("sing")
 
 const product=(data)=>{
     document.querySelector(".claa").innerHTML=""
@@ -75,6 +87,32 @@ const product=(data)=>{
         div.setAttribute("class","productd ")
         div.append(div1,content)
         col.append(div)
+        row.append(col)
+        let div=document.createElement("div")
+        div.setAttribute("class","productd ")
+        div.append(div1,content)
+        col.append(div)
+        document.querySelector(".claa").append(col)
+    })
+}
+document.getElementById("lth").addEventListener("click",()=>{
+    let lth=products.sort((a,b)=>a.price-b.price)
+    console.log(lth);
+    product(lth)
+})
+document.getElementById("htl").addEventListener("click",()=>{
+    let htl=products.sort((a,b)=>b.price-a.price)
+    console.log(lth);
+    product(htl)
+})
+document.getElementById("all").addEventListener("click",()=>{
+    product(get())
+})
+        row.setAttribute("class","class")
+        let col=document.createElement("div")
+        col.setAttribute("class"," col-xl-3 col-lg-3  col-md-2 col-sm-2 padding-0 border")
+        row.append(col)
+        col.append(div1,content)
         document.querySelector(".claa").append(col)
     })
 }
@@ -100,6 +138,13 @@ window.addEventListener("load",()=>{
 })
 
 
+let ig =document.querySelector(".loader-one")
+console.log(ig);
+
+window.addEventListener("load",()=>{
+    ig.style.display="none"
+    
+})
 
 
 const get =async()=>{
@@ -111,4 +156,19 @@ const get =async()=>{
         product(data)
     })
 }
+
+const cartget=()=>{
+    fetch("http://localhost:3000/cart")
+    .then((res)=>res.json())
+    .then((data)=>{
+        let dat=data.length
+        if(data.length>0){
+            document.querySelector(".cart-s").innerHTML=dat
+        }
+        else{
+            document.querySelector(".cart-s").style.display="none"
+        }
+    })
+}
+cartget()
 get()

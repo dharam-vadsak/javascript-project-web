@@ -12,11 +12,7 @@ if(sign){
     document.getElementById("logout").style.display="block"
     document.querySelector(".carticon").style.display="block"
 
-}
-if(!(sign)){
-    document.getElementById("profile").style.display="none"
-    document.querySelector("aside").style.display="none"
-    document.querySelector(".carticon").style.display="none"
+
 }
 
 
@@ -28,6 +24,7 @@ const logout=()=>{
     document.getElementById("profile").style.display="none"
     document.querySelector("aside").style.display="none"
     localStorage.removeItem("signup")
+
 }
 document.getElementById("logout").addEventListener("click",logout)
 
@@ -68,9 +65,6 @@ document.getElementById("close").addEventListener("click",(e)=>{
     document.getElementById("user-profile").style.display="none"
 })
 
-
-
-
 let ig =document.querySelector(".loader-one")
 console.log(ig);
 
@@ -80,8 +74,8 @@ window.addEventListener("load",()=>{
 })
 
 
-let data2=[]
 
+let data2=[]
 
 const ncc=(data)=>{
     let temp=[]
@@ -90,14 +84,13 @@ const ncc=(data)=>{
             temp.push(ele)
         }
     })
-    // console.log(temp);
+
     product(temp)
     localStorage.setItem("cat",JSON.stringify(temp))
 }
 
 
 document.getElementById("ncc").addEventListener("click",()=>ncc("habitatnespressocompatiblecoffeecapsules"))
-
 
 
 const get=()=>{

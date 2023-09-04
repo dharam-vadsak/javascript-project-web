@@ -151,6 +151,14 @@ data.map((ele)=>{
 
 }
 
+
+let ig =document.querySelector(".loader-one")
+console.log(ig);
+
+window.addEventListener("load",()=>{
+    ig.style.display="none"
+    
+})
 const get=()=>{
     fetch(` http://localhost:3000/cart`)
     .then((res)=>res.json())
@@ -158,6 +166,7 @@ const get=()=>{
         cart(data)
         totle(data)
         let dat=data.length
+
             if(data.length>0){
                 document.querySelector(".cart-s").innerHTML=dat
             }

@@ -1,3 +1,4 @@
+
 import { footer, header} from "../component/load.js";
 document.getElementById("showhead").innerHTML=header()
 document.getElementById("footershow").innerHTML=footer()
@@ -15,15 +16,13 @@ let data=[]
 data.push(productstor)
 let qytco=data[0].qyt
 
-const aa=(data)=>{
-    
-    data.map((ele)=>{
-        document.title=ele.title 
 
+const aa=(data)=>{
+    data.map((ele)=>{
+        document.title=ele.title
+        console.log(ele.title);
         let imgdiv=document.createElement("div")
         imgdiv.setAttribute("class","imgdiv")
-        
-
 
         let img=document.createElement("img")
         img.setAttribute("id",`mainimg`)
@@ -128,6 +127,7 @@ const aa=(data)=>{
 
         let row=document.createElement("div")
         row.setAttribute("class","row")
+        row.setAttribute("class","row pb")
         let col=document.createElement("div")
         col.setAttribute("class","col-xl-12")
         row.append(col)
@@ -136,6 +136,7 @@ const aa=(data)=>{
         col.append(div)
         div.append(imgdiv,contetdiv)
         document.querySelector(".section").append(row)
+
     })
 }
 
@@ -164,5 +165,3 @@ const cart=()=>{
 }
 cart()
 get()
-
-// aa()
