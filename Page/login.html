@@ -12,24 +12,27 @@
     </style>
 </head>
 <body>
-    <section>
+    <section class="loginsctn">
         <div class="container">
-            <div class="login-box">
-                <h1>login</h1>
-                <form id="login">
-                    <label>email address : </label>
-                    <input type="email" id="loginemail"><br>
-                    <p id="email-error"></p>
-                    <label>password <span>:</span> </label>
-                    <input type="password" id="pass-login"><br>
-                    <p id="password-error"></p>
-                    <a href=""><p id="forget">forget password ?</p></a>
-                    <div class="checkbox">
-                        <input type="checkbox" id="checkbox"><p id="show">Show password !</p>
-                    </div>
-                    <button type="submit" value="login" id="login-btn">login</button>
-                    <p class="singup-de">don`t have an account ? <a href="/Page/sign.html" class="singup-cheng">Sign-up</a></p>
-                </form>
+            <div class="loginbox1">
+                <div class="login-box">
+                    <h1>login</h1>
+                    <form id="login">
+                        <label>email address : </label>
+                        <input type="email" id="loginemail"><br>
+                        <p id="email-error"></p>
+                        <label>password <span>:</span> </label>
+                        <input type="password" id="pass-login"><br>
+                        <p id="password-error"></p>
+                        <div class="checkbox flex">
+                            <input type="checkbox" id="checkbox">
+                            <p id="show">Show password !</p>
+                        </div>
+                        <a href=""><p id="forget">forget password ?</p></a>
+                        <button type="submit" value="login" id="login-btn">login</button>
+                        <p class="singup-de">don`t have an account ? <a href="/Page/sign.html" class="singup-cheng">Sign-up</a></p>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
