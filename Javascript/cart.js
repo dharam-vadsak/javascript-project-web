@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { footer, header, load} from "../component/load.js"
 document.getElementById("footerpro").innerHTML=footer()
 document.getElementById("cartloader").innerHTML=load()
@@ -19,6 +20,13 @@ if(!(sign)){
     document.querySelector(".carticon").style.display="none"
     
 }
+=======
+import { footer, load, prohead } from "../component/load.js"
+document.getElementById("footerpro").innerHTML=footer()
+document.getElementById("cartloader").innerHTML=load()
+document.getElementById("cartheader").innerHTML=prohead()
+let totl=""
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
 const cart=(data)=>{
     let aa=""
     data.map((ele)=>{
@@ -131,12 +139,19 @@ const cart=(data)=>{
         if(aa==1){
             document.querySelector(`.min${ele.id}`).style.transform= "scale(0)"
         }
+<<<<<<< HEAD
      
+=======
+        else if(aa>4){
+            document.querySelector(".min").style.transform= "scale(1)"
+        }
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
     })
 }
 
 
 
+<<<<<<< HEAD
 let ig =document.querySelector(".loader-one")
 console.log(ig);
 
@@ -144,6 +159,8 @@ window.addEventListener("load",()=>{
     ig.style.display="none"
     
 })
+=======
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
 
 
 
@@ -165,6 +182,17 @@ data.map((ele)=>{
 
 }
 
+<<<<<<< HEAD
+=======
+let ig =document.querySelector(".loader-one")
+console.log(ig);
+
+window.addEventListener("load",()=>{
+    ig.style.display="none"
+    
+})
+
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
 const get=()=>{
     fetch(` http://localhost:3000/cart`)
     .then((res)=>res.json())
@@ -172,12 +200,21 @@ const get=()=>{
         cart(data)
         totle(data)
         let dat=data.length
+<<<<<<< HEAD
             if(data.length>0){
                 document.querySelector(".cart-s").innerHTML=dat
             }
             else{
                 document.querySelector(".cart-s").style.display="none"
             }
+=======
+        if(data.length>0){
+            document.querySelector(".cart-s").innerHTML=dat
+        }
+        else{
+            document.querySelector(".cart-s").style.display="none"
+        }
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
     })
 }
 get()

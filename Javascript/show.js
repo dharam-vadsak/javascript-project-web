@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 import { footer, header } from "../component/load.js";
 document.getElementById("showhead").innerHTML=header()
 document.getElementById("footershow").innerHTML=footer()
+=======
+import { footer } from "../component/load.js";
+
+document.getElementById("footershow").innerHTML=footer
+// document.getElementById("footerdiv").innerHTML=load()
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
 let productstor=JSON.parse(localStorage.getItem("product"))
+document.title=""
 console.log(productstor);
 document.title=""
 let sign=localStorage.getItem("signup")
@@ -10,6 +18,7 @@ let sign=localStorage.getItem("signup")
 let data=[]
 data.push(productstor)
 let qytco=data[0].qyt
+<<<<<<< HEAD
 if(sign){
     document.getElementById("signup").style.display="none"
     document.getElementById("login").style.display="none"
@@ -29,6 +38,15 @@ const aa=(data)=>{
     data.map((ele)=>{
         document.title=ele.title 
 
+=======
+
+
+const aa=(data)=>{
+    // console.log(data);
+    data.map((ele)=>{
+        document.title=ele.title
+        console.log(ele.title);
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
         let imgdiv=document.createElement("div")
         imgdiv.setAttribute("class","imgdiv")
         
@@ -106,8 +124,11 @@ const aa=(data)=>{
         addtocart.innerHTML="add to cart"
         addtocart.setAttribute("class","addtocart")
         addtocart.addEventListener("click",()=>{
+<<<<<<< HEAD
 
             if(sign){
+=======
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
             fetch(`http://localhost:3000/cart?id=${ele.id}`)
             .then((res)=>res.json())
             .then((data)=>{
@@ -138,7 +159,7 @@ const aa=(data)=>{
         contetdiv.append(title,description,readbtn,closemore,addtocart)
 
         let row=document.createElement("div")
-        row.setAttribute("class","row")
+        row.setAttribute("class","row pb")
         let col=document.createElement("div")
         col.setAttribute("class","col-xl-12")
         row.append(col)
@@ -156,7 +177,17 @@ const get=()=>{
     .then((res)=>res.json())
     .then((data)=>{
         aa(data)
+<<<<<<< HEAD
         
+=======
+        let dat=data.length
+        if(data.length>0){
+            document.querySelector(".cart-s").innerHTML=dat
+        }
+        else{
+            document.querySelector(".cart-s").style.display="none"
+        }
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
     })
 }
 

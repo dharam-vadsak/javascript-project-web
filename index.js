@@ -79,9 +79,12 @@ document.getElementById("close").addEventListener("click",(e)=>{
     document.getElementById("user-profile").style.display="none"
 })
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
 let ig =document.querySelector(".loader-one")
 console.log(ig);
 
@@ -91,7 +94,10 @@ window.addEventListener("load",()=>{
 })
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
 const get=()=>{
     fetch(" http://localhost:3000/cart")
     .then((res)=>res.json())

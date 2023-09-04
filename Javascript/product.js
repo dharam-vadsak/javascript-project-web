@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 
 import { footer, header, load } from "/component/load.js"
 document.getElementById("produloder").innerHTML=load()
 document.getElementById("footerprodu").innerHTML=footer()
 document.getElementById("producthead").innerHTML=header()
+=======
+// import { prohead } from "../component/load"
+import { footer, load,prohead } from "/component/load.js"
+document.getElementById("produloder").innerHTML=load()
+document.getElementById("footerprodu").innerHTML=footer()
+document.getElementById("producthead").innerHTML=prohead()
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
 let sing=localStorage.getItem("sing")
 let products=[]
 let sign=localStorage.getItem("signup")
@@ -72,14 +80,18 @@ const product=(data)=>{
 
         
         let row=document.createElement("div")
-        row.setAttribute("class","row")
+        row.setAttribute("class","class")
         let col=document.createElement("div")
         col.setAttribute("class"," col-xl-3 col-lg-3  col-md-2 col-sm-2  ")
         row.append(col)
+<<<<<<< HEAD
         let div=document.createElement("div")
         div.setAttribute("class","productd ")
         div.append(div1,content)
         col.append(div)
+=======
+        col.append(div1,content)
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
         document.querySelector(".claa").append(col)
     })
 }
@@ -99,6 +111,14 @@ document.getElementById("all").addEventListener("click",()=>{
 
 let ig =document.querySelector(".loader-one")
 console.log(ig);
+<<<<<<< HEAD
+=======
+
+window.addEventListener("load",()=>{
+    ig.style.display="none"
+    
+})
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
 
 window.addEventListener("load",()=>{
     ig.style.display="none"
@@ -110,6 +130,7 @@ const get =()=>{
     .then((res)=>res.json())
     .then((data)=>{
         product(data)
+        
     })
 }
 const cartget=()=>{
@@ -117,7 +138,10 @@ const cartget=()=>{
     .then((res)=>res.json())
     .then((data)=>{
         let dat=data.length
+<<<<<<< HEAD
         products=data
+=======
+>>>>>>> 3cb21b1173b3fa521793e7b9fe947c289928b459
         if(data.length>0){
             document.querySelector(".cart-s").innerHTML=dat
         }
