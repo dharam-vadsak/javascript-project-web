@@ -1701,14 +1701,6 @@ nav ul li:hover .megamenu {
       text-transform: uppercase;
   }
 
-  .addtocart:hover{
-
-}
-
-
-
-
-
 #productappend .col-xl-3 {
   border: 1px solid black;
 }
@@ -1756,9 +1748,6 @@ nav ul li:hover .megamenu {
   position: relative;
 }
 
-
-  padding: 0px;
-}
 
 .overly-product {
   position: absolute;
