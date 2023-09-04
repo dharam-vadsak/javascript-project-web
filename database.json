@@ -1,9 +1,5 @@
 {
-<<<<<<< Updated upstream
-  "signup":[],
-  "cart":[],
-  "product":[]
-=======
+
   "signup": [
     {
       "img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBERERERERESGBESEREREREYGBESERESGBgZGRgYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHzQrJCw0NjQ2NDQ0NDQ0NDQ4MTQ2NDE0NDQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQYCBQcEAwj/xABBEAACAQIDBQYDBAcHBQEAAAABAgADEQQhMQUSQVFhBhMicYGRBzKhQmJysRQjUoKSwdFDorLC4fDxJDM0U3QW/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAEDAgT/xAAgEQEBAQEAAgICAwAAAAAAAAAAAQIRITEDQRJhIlHR/9oADAMBAAIRAxEAPwDp8REjoiIgIiICIiAkSYgREh2ABJNgBcnhKl2o7XLhTuU13qpt4P2b6X6nl7ydWRbGYDUgSEcNoQfLOcM2ltnF1iWerUIP2FLLT9bZH0mp/TKinwmx5gm/5x05H6LicH2f2i2jTI7vE1LX+UsHX+FriXLZXxEceHF0lLD7SeEn0Jt9RHU46PEquF7d4J/napTztdkZlHmyXA9bSx4TFU6yB6Tq6HRlIIjpx94iJQiIgJEmRASJMQqIiIGMRED6xEQhERAREQEREBETCvVSmrO7BUUXZiQABzJgabtPtYYWkW+2bimPvWJ3j0Fvcicbx+LaoalQkljdFJ1uSLt5kEj1lt7adoaWKJp0AW3UZWc5KylgfCNdVGfXrKklAui7o8Y3SQcrsuX1A95xb5dyeOR8rqqsKhNxYG3E2zA6DSfBKVM6uVJzAGdh166T2YvZ7uWCKxI4WN/+Z8U2LiXYAUnvpoRE1P7Lm/0wam9IbwZSOpufa887VmqZMx1uTr9TPRi8JUoutOopAXUcPOYVKK2DpvBD8xsQF",
@@ -52,10 +48,12 @@
       "email": "vishal222@gmail.com",
       "password": "Vishal@12345",
       "id": 6
+
     }
   ],
   "cart": [
     {
+
       "title": "Habitat Nespresso Compatible Coffee Capsules",
       "price": "1299",
       "description": "A Mild blend showc. regions & innovative tech. in Indonesia. Medium syrupy body, roast peanut aromas, molasses, spice, citric acidity & hints of vanilla in aftertaste",
@@ -203,7 +201,7 @@
       "imgone": "https://caramelly.in/cdn/shop/products/wander-wonder-coffee-capsulespods-296083_400x.jpg?v=1691513149",
       "imgtwo": "https://cdn.shopify.com/s/files/1/0480/5378/0638/products/tried-true-coffee-capsulespods-408412_400x.jpg?v=1691513149",
       "imgthree": "https://cdn.shopify.com/s/files/1/0480/5378/0638/products/tried-true-coffee-capsulespods-408412_400x.jpg?v=1691513149",
-      "cat": "Nespresso Coffee Capsules",
+      "cat": "NespressoCoffeeCapsules",
       "id": 5
     },
     {
@@ -473,5 +471,4 @@
       "id": 24
     }
   ]
->>>>>>> Stashed changes
 }

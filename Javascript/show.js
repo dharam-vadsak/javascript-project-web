@@ -1,3 +1,4 @@
+
 import { footer, header} from "../component/load.js";
 document.getElementById("showhead").innerHTML=header()
 document.getElementById("footershow").innerHTML=footer()
@@ -12,16 +13,25 @@ if(signup){
     document.querySelector(".carticon").style.display="none"
 
 }
+import { footer } from "../component/load.js";
+
+document.getElementById("footershow").innerHTML=footer
+// document.getElementById("footerdiv").innerHTML=load()
+let productstor=JSON.parse(localStorage.getItem("product"))
+document.title=""
+console.log(productstor)
 let data=[]
 data.push(productstor)
 let qytco=data[0].qyt
 
 const aa=(data)=>{
-    // console.log(data);
     data.map((ele)=>{
-        // console.log(ele);
         document.title=ele.title 
 
+const aa=(data)=>{
+    data.map((ele)=>{
+        document.title=ele.title
+        console.log(ele.title);
         let imgdiv=document.createElement("div")
         imgdiv.setAttribute("class","imgdiv")
         
@@ -130,6 +140,7 @@ const aa=(data)=>{
 
         let row=document.createElement("div")
         row.setAttribute("class","row")
+        row.setAttribute("class","row pb")
         let col=document.createElement("div")
         col.setAttribute("class","col-xl-12")
         row.append(col)
@@ -138,6 +149,7 @@ const aa=(data)=>{
         col.append(div)
         div.append(imgdiv,contetdiv)
         document.querySelector(".section").append(row)
+        document.querySelector("section").append(row)
     })
 }
 

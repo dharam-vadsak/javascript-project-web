@@ -1,3 +1,4 @@
+
 // import { header } from "../component/load"
 import { footer,  header,load } from "/component/load.js"
 document.getElementById("produloder").innerHTML=load()
@@ -41,6 +42,16 @@ const product=(data)=>{
     data.map((ele)=>{
         let div1=document.createElement("div")
         div1.setAttribute("class","div1 padding-0")
+// import { prohead } from "../component/load"
+import { footer, load,prohead } from "/component/load.js"
+document.getElementById("produloder").innerHTML=load()
+document.getElementById("footerprodu").innerHTML=footer()
+document.getElementById("producthead").innerHTML=prohead()
+let sing=localStorage.getItem("sing")
+const product=(data)=>{
+    data.map((ele)=>{
+        let div1=document.createElement("div")
+        div1.setAttribute("class","div1")
 
         div1.setAttribute("id","hover")
         let img=document.createElement("img")
@@ -95,6 +106,15 @@ document.getElementById("htl").addEventListener("click",()=>{
 document.getElementById("all").addEventListener("click",()=>{
     product(get())
 })
+        row.setAttribute("class","class")
+        let col=document.createElement("div")
+        col.setAttribute("class"," col-xl-3 col-lg-3  col-md-2 col-sm-2 padding-0 border")
+        row.append(col)
+        col.append(div1,content)
+        document.querySelector(".claa").append(col)
+    })
+}
+
 let ig =document.querySelector(".loader-one")
 console.log(ig);
 
@@ -102,7 +122,6 @@ window.addEventListener("load",()=>{
     ig.style.display="none"
     
 })
-
 
 
 
@@ -115,4 +134,26 @@ const get =async()=>{
         product(data)
     })
 }
+const get =()=>{
+    fetch(`http://localhost:3000/product`)
+    .then((res)=>res.json())
+    .then((data)=>{
+        product(data)
+        
+    })
+}
+const cartget=()=>{
+    fetch("http://localhost:3000/cart")
+    .then((res)=>res.json())
+    .then((data)=>{
+        let dat=data.length
+        if(data.length>0){
+            document.querySelector(".cart-s").innerHTML=dat
+        }
+        else{
+            document.querySelector(".cart-s").style.display="none"
+        }
+    })
+}
+cartget()
 get()
